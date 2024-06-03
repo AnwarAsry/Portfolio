@@ -1,0 +1,68 @@
+@mixin navbar() {
+    .nav {
+        .navLinks {
+          display: flex;
+          list-style: none;
+    
+            &__li {
+                &__link {
+                    margin: 0 2px;
+                    padding: 8px 18px;
+                    display: block;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: #212526;
+                    transition: all .2s ease-in-out;
+    
+                    &:hover {
+                        background-color: #6ef5ff80;
+                    }
+    
+                    @media screen and (max-width: 860px) {
+                        margin-bottom: 5px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                    }
+                }
+    
+                &:last-of-type a {
+                    background-color: #13e1f0;
+                }
+            }
+    
+            @media screen and (max-width: 860px) {
+                padding: 0 20px;
+                margin-top: 30px;
+                display: block;
+            }
+        }
+    
+        @media screen and (max-width: 860px) {
+            width: 290px;
+            height: 100vh;
+            position: fixed;
+            left: -300px;
+            top: 0;
+            background-color: #927140;
+            transition: .2s;
+            z-index: 999;
+    
+            &.sideNav {
+                left: 0;
+            }
+        }
+    }
+    
+    #menuIcon {
+        cursor: pointer;
+        height: 30px;
+        display: none;
+        transition: .2s;
+    
+        @media screen and (max-width: 860px) {
+            display: block;
+        }
+    }
+}
