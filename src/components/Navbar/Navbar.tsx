@@ -1,28 +1,26 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import bars from './../../assets/Icons/bars-solid.svg';
 
 export const Navbar = () => {
     return <>
         <nav className="nav" id="nav">
             <ul className="navLinks" id="links" >
                 <li className="navLinks__li">
-                    <a href="#main-abtme" className="navLinks__li__link">ABOUT ME</a>
+                    <a href="#aboutMe" className="navLinks__li__link">ABOUT ME</a>
                 </li>
                 <li className="navLinks__li">
-                    <a href="#main-projects" className="navLinks__li__link">PROJECTS</a>
-                </li>
-                {/* <!-- <li className="nav-link"><a href="#main-skill">Skill/Experience</a></li> --> */}
-                <li className="navLinks__li">
-                    <a href="#main-cntme" className="navLinks__li__link">CONTACT ME</a>
+                    <a href="#projects" className="navLinks__li__link">PROJECTS</a>
                 </li>
                 <li className="navLinks__li">
-                    <a href="../Anwar_Asry_CV.pdf" target="_blank" download className="navLinks__li__link"
-                        id="downloadCV">DOWNLOAD CV</a>
+                    <a href="#skillset" className="navLinks__li__link">SKILLSET</a>
+                </li>
+                <li className="navLinks__li">
+                    <a href="../Anwar_Asry_CV.pdf" target="_blank" className="navLinks__li__link"
+                        id="downloadCV" download>DOWNLOAD CV</a>
                 </li>
             </ul>
         </nav>
         <div className="hamBtn">
-            <img id="menuIcon" src="../../assets/Icons/bars-solid.svg" alt="Ham" />
-            <FontAwesomeIcon icon="fa-solid fa-bars" />
+            <img id="menuIcon" src={bars} alt="Ham" />
         </div>
     </>
 }

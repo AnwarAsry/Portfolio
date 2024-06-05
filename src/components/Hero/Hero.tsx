@@ -1,3 +1,5 @@
+import profile from "../../assets/Images/profile.jpeg"
+
 export const Hero = () => {
     return <>
         <section className="hero">
@@ -11,7 +13,7 @@ export const Hero = () => {
                     <p className="intro__text--sentence">Hi, I'm Anwar a frontend-developer from Stockholm, Sweden.</p>
                 </div>
                 <div className="intro__img">
-                    <img src="./media/Images/profile.jpeg" alt="Image of Developer" />
+                    <img src={profile} alt="Image of Developer" />
                 </div>
             </div>
         </section>

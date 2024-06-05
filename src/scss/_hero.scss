@@ -1,103 +1,98 @@
-@mixin Hero () {
-    height: calc(100vh - 70px);
-    padding: 16px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .intro {
-        height: 100%;
+@mixin Hero() {
+    .hero {
+        height: calc(100vh - 70px);
+        padding: 16px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
-
-        &__text {
-            margin-bottom: 16px;
-            color: #212526;
-
-            &--greeting {
-                font-size: 2rem;
-
-                @media screen and (max-width: 1165px) {
-                    font-size: 1.4rem;
-                }
-            }
-
-            &--name {
-                margin-top: 8px;
-                font-size: 3.6rem;
-                line-height: 1.1;
-
-                @media screen and (max-width: 1165px) {
-                    font-size: 2.8rem;
-                }
-
-                @media screen and (max-width: 620px) {
-                    font-size: 1.8rem;
-                }
-            }
-
-            &--sentence {
-                margin-top: 16px;
-                font-size: 1.2rem;
-                color: #ababab;
-
-                @media screen and (max-width: 1165px) {
-                    font-size: 1rem;
-                }
-
-                @media screen and (max-width: 620px) {
-                    margin-top: 4px;
-                }
-            }
-
-            @media screen and (max-width: 1060px) {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
-
-        &__img {
+    
+        .intro {
+            height: 100%;
             display: flex;
+            justify-content: center;
             align-items: center;
-            height: inherit;
-
-            img {
-                width: 450px;
-                height: 80%;
-                border-radius: 100%;
-                object-fit: cover;
-
-                @media screen and (max-width: 1060px) {
-                    height: 100%;
+            gap: 100px;
+    
+            &__text {
+                margin-bottom: 16px;
+                color: #212526;
+    
+                &--greeting {
+                    font-size: 2rem;
+    
+                    @media screen and (max-width: 1165px) {
+                        font-size: 1.4rem;
+                    }
                 }
-
+    
+                &--name {
+                    margin-top: 8px;
+                    font-size: 3.6rem;
+                    line-height: 1.1;
+    
+                    @media screen and (max-width: 1165px) {
+                        font-size: 2.8rem;
+                    }
+    
+                    @media screen and (max-width: 620px) {
+                        font-size: 1.8rem;
+                    }
+                }
+    
+                &--sentence {
+                    margin-top: 16px;
+                    font-size: 1.2rem;
+                    color: #6a6a6a;
+    
+                    @media screen and (max-width: 1165px) {
+                        font-size: 1rem;
+                    }
+    
+                    @media screen and (max-width: 620px) {
+                        margin-top: 4px;
+                    }
+                }
+    
+                @media screen and (max-width: 1060px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+    
+            &__img {
+                display: flex;
+                align-items: center;
+                height: inherit;
+    
+                img {
+                    max-width: 450px;
+                    height: 80%;
+                    border-radius: 100%;
+                    object-fit: cover;
+    
+                    @media screen and (max-width: 1060px) {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
                 @media screen and (max-width: 620px) {
                     width: 100%;
+                    height: 450px;
                 }
             }
-
-            @media screen and (max-width: 620px) {
-                width: 100%;
+    
+            @media screen and (max-width: 1060px) {
+                padding-top: 32px;
+                flex-direction: column;
+                gap: 32px;
             }
         }
-
-        @media screen and (max-width: 1060px) {
-            padding-top: 32px;
-            flex-direction: column;
-            gap: 32px;
-        }
-
+    
         @media screen and (max-width: 620px) {
-            padding: 0;
-            gap: 0;
+            height: calc(100vh - 50px);
+            padding-top: 0;
         }
-    }
-
-    @media screen and (max-width: 620px) {
-        height: calc(100vh - 50px);
-        padding-top: 0;
     }
 }

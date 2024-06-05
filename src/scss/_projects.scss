@@ -1,0 +1,116 @@
+@mixin Projects() {
+    .projects {
+        padding: 64px 16px;
+
+        &__text {
+            text-align: center;
+
+            &__title {
+                font-size: 2rem;
+                font-weight: 600;
+                word-spacing: .12rem;
+                text-transform: uppercase;
+                color: #1ac6cc;
+
+                @media screen and (max-width: 620px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .project-wrapper {
+            width: 964px;
+            margin: 32px auto 0;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 32px;
+
+            .card {
+                grid-column: span 2;
+
+                @include ProjectCard();
+
+                // Dealing with 2 orphan items
+                &:last-child:nth-child(3n - 1) {
+                    grid-column-end: -2;
+                }
+
+                &:nth-last-child(2):nth-child(3n + 1) {
+                    grid-column-end: 4;
+                }
+
+                // Dealing with single orphan
+                &:last-child:nth-child(3n - 2) {
+                    grid-column-end: 5;
+                }
+            }
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@mixin ProjectCard() {
+    width: 300px;
+    height: 455px;
+    padding: 16px;
+    position: relative;
+    border: 6px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 9px 9px 0px rgb(0, 0, 0);
+    background-color: #f1f1f1;
+
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__info {
+        padding: 0 8px;
+        margin-top: 16px;
+
+        &--title {
+            font-size: 1.5rem;
+            word-break: normal;
+        }
+
+        &--desc {
+            margin: 8px 0 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: .9rem;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+        }
+
+        &__button {
+            cursor: pointer;
+            width: 140px;
+            height: 40px;
+            padding: 8px 16px;
+            position: absolute;
+            bottom: 16px;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-size: .9rem;
+            color: #ebebeb;
+            background-color: rgb(49, 138, 255);
+            transition: all 300ms ease-out;
+
+
+            &:hover {
+                background-color: rgb(90, 161, 255);
+            }
+        }
+    }
+}

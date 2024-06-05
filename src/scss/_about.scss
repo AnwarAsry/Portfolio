@@ -1,0 +1,159 @@
+@mixin About($mainBgC) {
+    .abt {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        background-color: $mainBgC;
+
+        &__picture {
+            img {
+                width: 400px;
+                height: 500px;
+                object-fit: cover;
+                border: 5px solid rgb(0, 0, 0);
+                border-radius: 10px;
+                box-shadow: 9px 9px 0 black;
+
+                @media screen and (max-width: 1240px) {
+                    width: 400px;
+                    height: 500px;
+                }
+
+                @media screen and (max-width: 1190px) {
+                    display: none;
+                }
+            }
+        }
+
+        .info {
+            width: 45%;
+
+            &__title {
+                margin-bottom: 16px;
+
+                p {
+                    margin-bottom: 8px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    word-spacing: .12rem;
+                    text-transform: uppercase;
+                    color: #1ac6cc;
+
+                    @media screen and (max-width: 620px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                h2 {
+                    font-size: 2.1rem;
+
+                    @media screen and (max-width: 620px) {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            &__text {
+                font-size: 1.1rem;
+
+                @media screen and (max-width: 620px) {
+                    font-size: 1rem;
+                }
+            }
+
+            &__table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 1rem;
+
+                table {
+                    max-width: 340px;
+                    font-weight: 600;
+
+                    .tb-column {
+                        width: 150px;
+                        padding-right: 20px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    .tb-info {
+                        width: 190px;
+                        color: #ffba19;
+                    }
+                }
+
+                @media screen and (max-width: 620px) {
+                    font-size: .8rem;
+                }
+            }
+
+            .CVSocials {
+                display: flex;
+                align-items: center;
+                gap: 64px;
+
+                .downloadBtn {
+                    cursor: pointer;
+                    min-width: 180px;
+                    padding: 16px 32px;
+                    border: none;
+                    border-radius: 4px;
+                    color: whitesmoke;
+                    background-color: #10A3A8;
+                    transition: background-color 200ms ease-in;
+
+                    &:hover {
+                        background-color: rgb(0, 204, 255);
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    &__links {
+                        display: flex;
+                        gap: 16px;
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1190px) {
+                    justify-content: space-evenly;
+                }
+
+                @media screen and (max-width: 620px) {
+                    flex-direction: column;
+                    gap: 32px;
+                }
+            }
+
+            @media screen and (max-width: 1190px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width: 620px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1240px) {
+            gap: 64px;
+        }
+
+        @media screen and (max-width: 1190px) {
+            gap: 0;
+        }
+
+        @media screen and (max-width: 620px) {
+            padding: 32px;
+        }
+    }
+}

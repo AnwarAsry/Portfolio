@@ -1,0 +1,26 @@
+@use "./abstracts/variables"as v;
+
+@mixin Footer() {
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: v.$mainBgC;
+    
+    .footer-sections {
+        width: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+        a {
+            display: block;
+            margin-top: 10px;
+        }
+    
+        p {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+}

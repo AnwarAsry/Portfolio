@@ -1,6 +1,10 @@
 @use "./scss/abstracts/variables" as v;
 @use "./scss/navbar" as nav;
 @use "./scss/hero" as hero;
+@use "./scss/about" as about;
+@use "./scss/skillset" as skillset;
+@use "./scss/projects" as projects;
+@use "./scss/footer" as footer;
 
 *,
 *::after,
@@ -8,6 +12,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e3e9f7;
+  // background-color: #bbd1d8;
+}
+
+img {
+  display: block;
+}
+
+.occupation {
+  color: #1ac6cc;
 }
 
 header {
@@ -32,8 +56,13 @@ header {
   }
 }
 
-.main {
-  .hero {
-    @include hero.Hero();
-  }
+main {
+  @include hero.Hero();
+  @include about.About(v.$mainBgC);
+  @include skillset.Skillset();
+  @include projects.Projects();
+}
+
+.footer {
+  @include footer.Footer();
 }
