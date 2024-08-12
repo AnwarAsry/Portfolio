@@ -1,10 +1,10 @@
-@use "./scss/abstracts/variables" as v;
-@use "./scss/navbar" as nav;
-@use "./scss/hero" as hero;
-@use "./scss/about" as about;
-@use "./scss/skillset" as skillset;
-@use "./scss/projects" as projects;
-@use "./scss/footer" as footer;
+@use "./scss/abstracts/variables"as v;
+@use "./scss/navbar"as nav;
+@use "./scss/hero"as hero;
+@use "./scss/about"as about;
+@use "./scss/skillset"as skillset;
+@use "./scss/projects"as projects;
+@use "./scss/footer"as footer;
 
 *,
 *::after,
@@ -35,19 +35,14 @@ img {
 }
 
 header {
-  width: fit-content;
   height: 70px;
-  margin: 0 auto;
-  padding: 0 40px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  border-radius: 0 0 10px 10px;
-  background-color: v.$mainBgC;
 
   // Navbar
   @include nav.Navbar();
-  
+
   @media screen and (max-width: 860px) {
     width: 100%;
     height: 50px;

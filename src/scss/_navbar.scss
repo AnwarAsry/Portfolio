@@ -1,45 +1,42 @@
+@use "./abstracts/variables"as v;
+
 @mixin Navbar() {
     .nav {
+        padding: 4px;
+        border-radius: 100px;
+        box-shadow: 0px 3px 10px rgb(207, 207, 207);
+        background-color: v.$mainBgC;
+
+
         .navLinks {
-          display: flex;
-          gap: 16px;
-          list-style: none;
-    
-            &__li {
-                &__link {
-                    margin: 0 2px;
-                    padding: 8px 18px;
-                    display: block;
-                    border-radius: 5px;
+            display: flex;
+            gap: 16px;
+            list-style: none;
+
+            &__item {
+                padding: 8px 18px;
+                border-radius: 100px;
+                transition: all .2s ease-in-out;
+
+                a {
                     font-weight: 600;
-                    text-decoration: none;
-                    text-transform: capitalize;
                     color: #212526;
-                    transition: all .2s ease-in-out;
-    
-                    &:hover {
-                        background-color: #6ef5ff80;
-                    }
-    
-                    @media screen and (max-width: 860px) {
-                        margin-bottom: 5px;
-                        padding: 10px 15px;
-                        border-radius: 5px;
-                    }
                 }
-    
-                &:last-of-type a {
-                    background-color: #13e1f0;
+
+                @media screen and (max-width: 860px) {
+                    margin-bottom: 5px;
+                    padding: 10px 15px;
+                    border-radius: 5px;
                 }
             }
-    
+
             @media screen and (max-width: 860px) {
                 padding: 0 20px;
                 margin-top: 30px;
                 display: block;
             }
         }
-    
+
         @media screen and (max-width: 860px) {
             width: 290px;
             height: 100vh;
@@ -49,19 +46,26 @@
             background-color: #927140;
             transition: .2s;
             z-index: 999;
-    
+
             &.sideNav {
                 left: 0;
             }
         }
+
+        .active {
+            border-radius: 100px;
+            // color: #e7e7e7; DARK MODE
+            // background-color: #292929; DARK MODE
+            background-color: #e6e6e6;
+        }
     }
-    
+
     #menuIcon {
         cursor: pointer;
         height: 30px;
         display: none;
         transition: .2s;
-    
+
         @media screen and (max-width: 860px) {
             display: block;
         }
