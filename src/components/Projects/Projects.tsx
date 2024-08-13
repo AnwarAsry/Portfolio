@@ -5,7 +5,7 @@ export const Projects = () => {
         <section className="projects" id="projects">
             <h2 className="projects__title">Currently working</h2>
             <hr />
-            <div className="projects-wrapper">
+            <div className="projects__wrapper">
                 <ProjectPresentation />
                 <ProjectPresentation />
                 <ProjectPresentation />
