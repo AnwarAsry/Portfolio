@@ -3,10 +3,12 @@ import { ProjectPresentation } from "./ProjectPresentation"
 export const Projects = () => {
     return <>
         <section className="projects" id="projects">
-            <div className="projects__text">
-                <h2 className="projects__text__title">Projects</h2>
-            </div>
-            <div className="project-wrapper">
+            <h2 className="projects__title">Currently working</h2>
+            <hr />
+            <div className="projects-wrapper">
+                <ProjectPresentation />
+                <ProjectPresentation />
+                <ProjectPresentation />
                 <ProjectPresentation />
             </div>
         </section>

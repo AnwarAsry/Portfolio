@@ -1,80 +1,67 @@
 @mixin Projects() {
     .projects {
-        padding: 64px 16px;
+        margin-bottom: 64px;
 
-        &__text {
+        &__title {
+            font-size: 2rem;
+            font-weight: 600;
             text-align: center;
+            word-spacing: .12rem;
+            color: #575f5f;
 
-            &__title {
-                font-size: 2rem;
-                font-weight: 600;
-                word-spacing: .12rem;
-                text-transform: uppercase;
-                color: #1ac6cc;
-
-                @media screen and (max-width: 620px) {
-                    font-size: 1.8rem;
-                }
+            @media screen and (max-width: 620px) {
+                font-size: 1.8rem;
             }
         }
 
-        .project-wrapper {
+        hr {
+            width: 75%;
+            margin: 8px auto 16px;
+        }
+
+        .projects-wrapper {
             width: 964px;
-            margin: 32px auto 0;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            justify-items: center;
             gap: 32px;
 
             .card {
-                grid-column: span 2;
-
                 @include ProjectCard();
-
-                // Dealing with 2 orphan items
-                &:last-child:nth-child(3n - 1) {
-                    grid-column-end: -2;
-                }
-
-                &:nth-last-child(2):nth-child(3n + 1) {
-                    grid-column-end: 4;
-                }
-
-                // Dealing with single orphan
-                &:last-child:nth-child(3n - 2) {
-                    grid-column-end: 5;
-                }
             }
 
-            @media screen and (max-width: 1000px) {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+            //     @media screen and (max-width: 1000px) {
+            //         width: 100%;
+            //         display: flex;
+            //         flex-wrap: wrap;
+            //         justify-content: center;
+            //     }
         }
     }
 }
 
 @mixin ProjectCard() {
-    width: 300px;
-    height: 455px;
+    display: flex;
+    width: 800px;
+    // height: 210px;
     padding: 16px;
-    position: relative;
-    border: 6px solid black;
+    // border: 6px solid black;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 9px 9px 0px rgb(0, 0, 0);
-    background-color: #f1f1f1;
-
+    // overflow: hidden;
+    // box-shadow: 9px 9px 0px rgb(0, 0, 0);
 
     &__img {
-        width: 100%;
+        // width: 250px;
         border-radius: 10px;
+        // object-fit: cover;
+        overflow: hidden;
     }
 
     &__info {
-        padding: 0 8px;
-        margin-top: 16px;
+        margin-left: 18px;
+        padding: 12px 16px;
+        border-radius: 10px;
+        background-color: #f1f1f1;
 
         &--title {
             font-size: 1.5rem;
@@ -82,9 +69,10 @@
         }
 
         &--desc {
-            margin: 8px 0 0;
+            width: 500px;
+            margin-top: 12px;
             display: -webkit-box;
-            -webkit-line-clamp: 6;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             font-size: .9rem;
@@ -92,25 +80,38 @@
             text-overflow: ellipsis;
         }
 
-        &__button {
-            cursor: pointer;
-            width: 140px;
-            height: 40px;
-            padding: 8px 16px;
-            position: absolute;
-            bottom: 16px;
-            outline: none;
-            border: none;
-            border-radius: 8px;
-            font-size: .9rem;
-            color: #ebebeb;
-            background-color: rgb(49, 138, 255);
-            transition: all 300ms ease-out;
+        // &__button {
+        //     cursor: pointer;
+        //     width: fit-content;
+        //     height: 30px;
+        //     padding: 0px 16px;
+        //     float: right;
+        //     outline: none;
+        //     border: none;
+        //     border-radius: 8px;
+        //     font-size: .9rem;
+        //     font-weight: 600;
+        //     color: rgb(49, 138, 255);
+        //     background-color: transparent;
+        //     transition: all 300ms ease-out;
 
+        //     &:hover {
+        //         text-decoration: underline;
+        //     }
+        // }
+    }
 
-            &:hover {
-                background-color: rgb(90, 161, 255);
-            }
+    &__tags {
+        margin-top: 16px;
+        display: flex;
+        gap: 8px;
+
+        span {
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: .8rem;
+            color: #4ce21e;
+            background-color: #082b3f;
         }
     }
 }
