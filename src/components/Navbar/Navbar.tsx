@@ -1,18 +1,38 @@
+import { useState } from 'react';
 import bars from './../../assets/Icons/bars-solid.svg';
+import { NavItem } from './NavItem';
+
+const navItems = [
+    {
+        name: "About"
+    },
+    {
+        name: "Technologies"
+    },
+    {
+        name: "Projects"
+    },
+]
 
 export const Navbar = () => {
+    const [visibleKey, setVisibleKey] = useState(0);
+    
+
+    const clickActive = (index: number) => {
+        setVisibleKey(index);
+    };
+
+
     return <>
         <nav className="nav" id="nav">
             <ul className="navLinks" id="links" >
-                <li className="navLinks__item active">
-                    <a href="#aboutMe">About Me</a>
-                </li>
-                <li className="navLinks__item">
-                    <a href="#skillset">Technologies</a>
-                </li>
-                <li className="navLinks__item">
-                    <a href="#projects">Projects</a>
-                </li>
+                {
+                    navItems.map((link, index) => {
+                        return (
+                            <NavItem key={index} item={link} index={index} visibleKey={visibleKey} clickEvent={clickActive}/>
+                        )
+                    })
+                }
                 {/* <li className="navLinks__li">
                     <a href="../Anwar_Asry_CV.pdf" target="_blank" className="navLinks__li__link"
                         id="downloadCV" download>DOWNLOAD CV</a>

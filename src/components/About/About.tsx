@@ -4,7 +4,7 @@ import linkedin from "../../assets/Icons/linkedin.svg"
 
 export const About = () => {
     return <>
-        <section className="abt" id="aboutMe">
+        <section className="abt" id="about">
             <div className="abt__picture">
                 {/* <!-- Another image MSG --> */}
                 <img src={profile} alt="Image of Developer" />

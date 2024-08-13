@@ -1,8 +1,8 @@
 export const Skillset = () => {
     return <>
-        <section className="skills" id="skillset">
+        <section className="skills" id="technologies">
             <div className="skills__title">
-                <h2>Skills</h2>
+                <h2>My Technologies</h2>
             </div>
             <div className="skills__list">
                 <ul>
