@@ -5,16 +5,13 @@ export const Hero = () => {
         <section className="hero">
             <div className="intro">
                 <div className="intro__text">
-                    <h3 className="intro__text--greeting">Hi there &#128075;</h3>
-                    <h1 className="intro__text--name">I'm Anwar Asry a 
+                    <h2 className="intro__text--greeting">Hi there, my name is
                         <br />
-                        <span className="occupation">Frontend-developer</span>
-                    </h1>
-                    <p className="intro__text--sentence">Hi, I'm Anwar a frontend-developer from Stockholm, Sweden.</p>
+                        Anwar Asry
+                    </h2>
+                    <p className="intro__text--sentence">I am a <span className="occupation">Frontend-developer</span> from Stockholm, Sweden.</p>
                 </div>
-                <div className="intro__img">
-                    <img src={profile} alt="Image of Developer" />
-                </div>
+                <img src={profile} alt="Image of Developer" />
             </div>
         </section>
     </>
