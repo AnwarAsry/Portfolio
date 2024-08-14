@@ -13,18 +13,23 @@ export const MyTechnologies = () => {
             <div className="skills__list">
                 <div className="skill">
                     <img src={reactIMG} alt="React JS" className="skill__image" />
+                    <p className="skill__desc">React JS</p>
                 </div>
                 <div className="skill">
                     <img src={flutterIMG} alt="Flutter" className="skill__image" />
+                    <p className="skill__desc">Flutter</p>
                 </div>
                 <div className="skill">
                     <img src={vueIMG} alt="Vue JS" className="skill__image" />
+                    <p className="skill__desc">Vue JS</p>
                 </div>
                 <div className="skill">
                     <img src={nodejsIMG} alt="Node JS" className="skill__image" />
+                    <p className="skill__desc">Node JS</p>
                 </div>
                 <div className="skill">
                     <img src={githubIMG} alt="Github" className="skill__image" />
+                    <p className="skill__desc">Github</p>
                 </div>
             </div>
         </section>

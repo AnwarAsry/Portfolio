@@ -21,6 +21,7 @@
         &__list {
             margin-top: 32px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 16px;
         }
@@ -29,17 +30,47 @@
             width: 80px;
             height: 80px;
             padding: 8px;
+            position: relative;
             border: 1px solid #013955;
             border-radius: 4px;
 
             &__image {
                 width: 100%;
             }
-        }
 
-        // @media screen and (max-width: 620px) {
-        //     margin: 32px 0;
-        //     padding: 0 16px;
-        // }
+            &__desc {
+                padding: 4px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -40px;
+                border-radius: 4px;
+                text-align: center;
+                font-size: .8rem;
+                color: #e5e5e5;
+                background-color: #151f20;
+                visibility: hidden;
+                opacity: 0;
+                
+                &::before {
+                    content: '';
+                    margin: 0 auto;
+                    position: absolute;
+                    top: -8px;
+                    left: 0;
+                    right: 0;
+                    width: 0; 
+                    height: 0; 
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #151f20;
+                }
+            }
+
+            &:hover .skill__desc {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 }
