@@ -9,9 +9,9 @@ export const Hero = () => {
                         <br />
                         Anwar Asry
                     </h2>
-                    <p className="intro__text--sentence">I am a <span className="occupation">Frontend-developer</span> from Stockholm, Sweden.</p>
+                    <p className="intro__text--sentence">I am a <span className="occupation">Frontend-developer</span> based in Stockholm, Sweden.</p>
                 </div>
-                <img src={profile} alt="Image of Developer" />
+                <img src={profile} alt="Image of Developer" className="intro__pic"/>
             </div>
         </section>
     </>

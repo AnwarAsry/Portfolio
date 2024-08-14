@@ -5,9 +5,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         .intro {
-            // width: fit-content;
             height: 100%;
             display: flex;
             justify-content: center;
@@ -16,63 +15,63 @@
 
             &__text {
                 width: 468px;
-                color: #212526;
 
                 &--greeting {
                     font-size: 3rem;
-    
+                    color: #212526;
+
                     // @media screen and (max-width: 1165px) {
                     //     font-size: 1.4rem;
                     // }
                 }
-    
+
                 &--sentence {
                     margin-top: 16px;
                     font-size: 1.3rem;
-                    color: #6a6a6a;
-    
+                    color: #4e4e4e;
+
                     // @media screen and (max-width: 1165px) {
                     //     font-size: 1rem;
                     // }
-    
+
                     // @media screen and (max-width: 620px) {
                     //     margin-top: 4px;
                     // }
                 }
-    
+
                 // @media screen and (max-width: 1060px) {
                 //     display: flex;
                 //     flex-direction: column;
                 //     justify-content: center;
                 // }
             }
-    
-            img {
+
+            &__pic {
                 width: 350px;
                 height: 500px;
                 border-radius: 50px;
                 object-fit: cover;
                 // img {
-    
-                    // @media screen and (max-width: 1060px) {
-                    //     width: 100%;
-                    //     height: 100%;
-                    // }
+
+                // @media screen and (max-width: 1060px) {
+                //     width: 100%;
+                //     height: 100%;
                 // }
-    
+                // }
+
                 // @media screen and (max-width: 620px) {
                 //     width: 100%;
                 //     height: 450px;
                 // }
             }
-    
+
             // @media screen and (max-width: 1060px) {
             //     padding-top: 32px;
             //     flex-direction: column;
             //     gap: 32px;
             // }
         }
-    
+
         // @media screen and (max-width: 620px) {
         //     height: calc(100vh - 50px);
         //     padding-top: 0;

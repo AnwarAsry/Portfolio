@@ -15,6 +15,9 @@ export const Landing = () => {
             <a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js">Node Js</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             <a target="_blank" href="https://icons8.com/icon/123603/react-native">react js</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             <a target="_blank" href="https://icons8.com/icon/7I3BjCqe9rjG/flutter">Flutter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com/icon/qyRpAggnV0zH/gmail">Gmail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com/icon/WCL5hPLvhUjQ/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com/icon/baRhMh2wmjbT/mail">Mail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </main>
     </>
 }
