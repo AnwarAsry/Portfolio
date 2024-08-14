@@ -2,7 +2,7 @@
 @use "./scss/navbar"as nav;
 @use "./scss/hero"as hero;
 @use "./scss/about"as about;
-@use "./scss/skillset"as skillset;
+@use "./scss/mytechnologies"as skillset;
 @use "./scss/projects"as projects;
 @use "./scss/footer"as footer;
 
@@ -54,7 +54,7 @@ header {
 main {
   @include hero.Hero();
   @include about.About(v.$mainBgC);
-  @include skillset.Skillset();
+  @include skillset.MyTechnologies();
   @include projects.Projects();
 }
 
