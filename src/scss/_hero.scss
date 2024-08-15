@@ -1,7 +1,6 @@
 @mixin Hero() {
     .hero {
         height: 70vh;
-        padding: 16px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,9 +19,14 @@
                     font-size: 3rem;
                     color: #212526;
 
-                    // @media screen and (max-width: 1165px) {
-                    //     font-size: 1.4rem;
-                    // }
+                    @media screen and (max-width: 1000px) {
+                        font-size: 2.3rem;
+                    }
+
+                    @media screen and (max-width: 520px) {
+                        text-align: center;
+                        font-size: 1.8rem;
+                    }
                 }
 
                 &--sentence {
@@ -30,20 +34,23 @@
                     font-size: 1.3rem;
                     color: #4e4e4e;
 
-                    // @media screen and (max-width: 1165px) {
-                    //     font-size: 1rem;
-                    // }
+                    @media screen and (max-width: 1000px) {
+                        margin-top: 8px;
+                        font-size: 1rem;
+                    }
 
-                    // @media screen and (max-width: 620px) {
-                    //     margin-top: 4px;
-                    // }
+                    @media screen and (max-width: 520px) {
+                        text-align: center;
+                    }
                 }
 
-                // @media screen and (max-width: 1060px) {
-                //     display: flex;
-                //     flex-direction: column;
-                //     justify-content: center;
-                // }
+                @media screen and (max-width: 1000px) {
+                    width: 350px;
+                }
+
+                @media screen and (max-width: 520px) {
+                    width: 60%;
+                }
             }
 
             &__pic {
@@ -51,30 +58,41 @@
                 height: 500px;
                 border-radius: 50px;
                 object-fit: cover;
-                // img {
 
-                // @media screen and (max-width: 1060px) {
-                //     width: 100%;
-                //     height: 100%;
-                // }
-                // }
+                @media screen and (max-width: 1000px) {
+                    width: 250px;
+                    height: 400px;
+                }
 
-                // @media screen and (max-width: 620px) {
-                //     width: 100%;
-                //     height: 450px;
-                // }
+                @media screen and (max-width: 740px) {
+                    width: 200px;
+                    height: 350px;
+                }
+
+                @media screen and (max-width: 520px) {
+                    width: 200px;
+                    height: 250px;
+                    border-radius: 30px;
+                }
             }
 
-            // @media screen and (max-width: 1060px) {
-            //     padding-top: 32px;
-            //     flex-direction: column;
-            //     gap: 32px;
-            // }
+            @media screen and (max-width: 1000px) {
+                gap: 40px;
+            }
+
+            @media screen and (max-width: 740px) {
+                width: 100%;
+                gap: 30px;
+            }
+
+            @media screen and (max-width: 520px) {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
 
-        // @media screen and (max-width: 620px) {
-        //     height: calc(100vh - 50px);
-        //     padding-top: 0;
-        // }
+        @media screen and (max-width: 520px) {
+            height: 50vh;
+        }
     }
 }
