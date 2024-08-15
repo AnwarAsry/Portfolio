@@ -1,6 +1,7 @@
 import profile from "../../assets/Images/profile.jpeg"
 import facebook from "../../assets/Icons/facebook.svg"
 import linkedin from "../../assets/Icons/linkedin.svg"
+import CV from "../../../public/AnwarCV.pdf"
 
 export const About = () => {
     return <>
@@ -43,7 +44,7 @@ export const About = () => {
                     </table>
                 </div>
                 <div className="CVSocials">
-                    <button id="downloadCV" className="downloadBtn">DOWNLOAD CV</button>
+                    <a href={CV} target="_blank" className="downloadBtn" id="downloadCV" download>DOWNLOAD CV</a>
                     <div className="social">
                         <p>Follow me</p>
                         <div className="social__links">

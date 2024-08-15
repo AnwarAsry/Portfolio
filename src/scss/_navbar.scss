@@ -2,6 +2,7 @@
 
 @mixin Navbar() {
     .nav {
+        margin-top: 14px;
         padding: 4px;
         position: fixed;
         border-radius: 100px;
@@ -24,33 +25,6 @@
                     font-weight: 600;
                     color: #212526;
                 }
-
-                @media screen and (max-width: 860px) {
-                    margin-bottom: 5px;
-                    padding: 10px 15px;
-                    border-radius: 5px;
-                }
-            }
-
-            @media screen and (max-width: 860px) {
-                padding: 0 20px;
-                margin-top: 30px;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 860px) {
-            width: 290px;
-            height: 100vh;
-            position: fixed;
-            left: -300px;
-            top: 0;
-            background-color: #927140;
-            transition: .2s;
-            z-index: 999;
-
-            &.sideNav {
-                left: 0;
             }
         }
 
@@ -59,17 +33,6 @@
             // color: #e7e7e7; DARK MODE
             // background-color: #292929; DARK MODE
             background-color: #e6e6e6;
-        }
-    }
-
-    #menuIcon {
-        cursor: pointer;
-        height: 30px;
-        display: none;
-        transition: .2s;
-
-        @media screen and (max-width: 860px) {
-            display: block;
         }
     }
 }

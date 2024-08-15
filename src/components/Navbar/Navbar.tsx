@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import bars from './../../assets/Icons/bars-solid.svg';
 import { NavItem } from './NavItem';
 
 const navItems = [
@@ -33,14 +32,7 @@ export const Navbar = () => {
                         )
                     })
                 }
-                {/* <li className="navLinks__li">
-                    <a href="../Anwar_Asry_CV.pdf" target="_blank" className="navLinks__li__link"
-                        id="downloadCV" download>DOWNLOAD CV</a>
-                </li> */}
             </ul>
         </nav>
-        <div className="hamBtn">
-            <img id="menuIcon" src={bars} alt="Ham" />
-        </div>
     </>
 }
