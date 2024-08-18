@@ -4,7 +4,7 @@
 @use "./scss/about"as about;
 @use "./scss/mytechnologies"as skillset;
 @use "./scss/projects"as projects;
-@use "./scss/footer"as footer;
+@use "./scss/contact"as contact;
 
 *,
 *::after,
@@ -50,8 +50,5 @@ main {
   @include about.About(v.$mainBgC);
   @include skillset.MyTechnologies();
   @include projects.Projects();
-}
-
-.footer {
-  @include footer.Footer();
+  @include contact.Contact();
 }
