@@ -1,5 +1,4 @@
-import facebook from "../../assets/Icons/facebook.svg"
-import linkedin from "../../assets/Icons/linkedin.svg"
+import linkedin from "../../assets/Icons/bxl-linkedin.svg"
 import CV from "../../../public/AnwarCV.pdf"
 
 export const About = () => {
@@ -22,9 +21,8 @@ export const About = () => {
             <div className="CVSocials">
                 <a href={CV} target="_blank" className="CVSocials__downloadBtn" id="downloadCV" download>DOWNLOAD CV</a>
                 <div className="social">
-                    <p>Follow me</p>
+                    <p>Follow me on</p>
                     <div className="social__links">
-                        <img src={facebook} alt="facebook" />
                         <img src={linkedin} alt="linkedin" />
                     </div>
                 </div>
