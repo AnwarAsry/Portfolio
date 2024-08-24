@@ -1,16 +1,14 @@
 @use "./abstracts/variables"as v;
+@use "./mixins"as mx;
 
 @mixin Contact() {
     .contact {
-        height: fit-content;
-        width: fit-content;
-        margin: 0 auto 150px;
-        padding: 1.25rem;
-        border-radius: .6rem;
-        background-color: v.$mainBgC;
+        @include mx.Wrapper(fit-content, v.$mainBgC);
+
+        animation: fadeRight 2s;
 
         &__title {
-            font-size: 1.8rem;
+            @include mx.Title();
         }
 
         &__info {
@@ -19,15 +17,9 @@
             flex-direction: column;
             gap: 1.3rem;
 
-            p {
-                display: flex;
-                gap: 2rem;
-            }
-
-            span {
+            div {
                 display: flex;
                 align-items: center;
-                flex-wrap: wrap;
                 gap: 1.2rem;
             }
         }
@@ -41,5 +33,16 @@
         &-icon {
             width: 2.5rem;
         }
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        opacity: 1;
     }
 }

@@ -47,7 +47,21 @@ header {
 
 main {
   @include hero.Hero();
-  @include about.About(v.$mainBgC);
+
+  .about-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @include about.About();
+
+    @media screen and (max-width: 620px) {
+      padding: 32px;
+    }
+  }
+
   @include skillset.MyTechnologies();
   @include projects.Projects();
   @include contact.Contact();

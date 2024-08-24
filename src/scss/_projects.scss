@@ -1,18 +1,17 @@
+@use "./mixins"as mx;
+
 @mixin Projects() {
     .projects {
         margin-bottom: 64px;
 
         &__title {
+            @include mx.Title();
+
             margin-top: 64px;
-            font-size: 2rem;
             font-weight: 600;
             text-align: center;
             word-spacing: .12rem;
             color: #082425;
-
-            @media screen and (max-width: 620px) {
-                font-size: 1.8rem;
-            }
         }
 
         hr {

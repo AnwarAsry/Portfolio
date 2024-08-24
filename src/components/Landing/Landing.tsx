@@ -1,17 +1,15 @@
 import { Hero } from "../Hero/Hero"
-import { About } from "../About/About"
+import { AboutSection } from "../About/AboutSection"
 import { MyTechnologies } from "../Technologies/MyTechnologies"
 import { Projects } from "../Projects/Projects"
-import { Contact } from "../Contact/Contact"
 
 export const Landing = () => {
     return <>
         <main id="content">
             <Hero />
-            <About />
+            <AboutSection />
             <MyTechnologies />
             <Projects />
-            <Contact />
             <a target="_blank" href="https://icons8.com/icon/rY6agKizO9eb/vue-js">Vue Js</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             <a target="_blank" href="https://icons8.com/icon/fmFqQmR0UdsR/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
             <a target="_blank" href="https://icons8.com/icon/hsPbhkOH4FMe/node-js">Node Js</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

@@ -1,109 +1,43 @@
-@mixin About($mainBgC) {
-    .abt {
-        padding: 50px;
+@use "./abstracts/variables"as v;
+@use "./mixins"as mx;
+
+@mixin About() {
+    .info {
+        @include mx.Wrapper(45%, v.$mainBgC);
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 64px;
-        background-color: $mainBgC;
+        justify-content: space-between;
+        gap: 40px;
 
-        .info {
-            width: 45%;
+        animation: fadeLeft 2s;
 
-            &__title {
-                margin-bottom: 16px;
-                animation-name: fadeRight;
-                animation-duration: 2s;
-
-                p {
-                    margin-bottom: 8px;
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    word-spacing: .12rem;
-                    text-transform: uppercase;
-                    color: #1ac6cc;
-
-                    @media screen and (max-width: 620px) {
-                        font-size: 1rem;
-                    }
-                }
-
-                h2 {
-                    font-size: 2.1rem;
-
-                    @media screen and (max-width: 620px) {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-
-            &__text {
-                font-size: 1.1rem;
-
-                animation-name: fadeRight;
-                animation-duration: 2s;
-
-                @media screen and (max-width: 620px) {
-                    font-size: 1rem;
-                }
-            }
-
-            @media screen and (max-width: 1190px) {
-                width: 80%;
-            }
+        span {
+            font-size: 1.2rem;
+            font-weight: 600;
+            word-spacing: .12rem;
+            text-transform: uppercase;
+            color: #2E5E60;
 
             @media screen and (max-width: 620px) {
-                width: 100%;
+                font-size: 1rem;
             }
         }
 
-        .CVSocials {
+        &__title {
+            margin-bottom: 16px;
+            @include mx.Title();
+        }
+
+        &__text {
+            font-size: .95rem;
+        }
+
+        .resume {
             display: flex;
-            align-items: center;
-            gap: 64px;
+            justify-content: center;
 
-            animation-name: fadeLeft;
-            animation-duration: 2s;
-
-            &__downloadBtn {
-                cursor: pointer;
-                min-width: 180px;
-                padding: 16px 32px;
-                border: none;
-                border-radius: 4px;
-                color: whitesmoke;
-                background-color: #10A3A8;
-                transition: background-color 200ms ease-in;
-
-                &:hover {
-                    background-color: rgb(0, 204, 255);
-                }
-            }
-
-            .social {
-                display: flex;
-                align-items: center;
-                gap: 16px;
-
-                &__links {
-                    display: flex;
-                    gap: 16px;
-
-                    img {
-                        width: 32px;
-                    }
-                }
-            }
-
-            @media screen and (max-width: 520px) {
-                flex-direction: column;
-                gap: 32px;
-            }
-        }
-
-        @media screen and (max-width: 620px) {
-            padding: 32px;
+            @include mx.ResumeButton();
         }
     }
 }
@@ -112,17 +46,6 @@
     from {
         opacity: 0;
         transform: translateX(-300px);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeRight {
-    from {
-        opacity: 0;
-        transform: translateX(300px);
     }
 
     to {
