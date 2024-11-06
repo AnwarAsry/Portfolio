@@ -1,68 +1,102 @@
 @use "./scss/abstracts/variables"as v;
-@use "./scss/navbar"as nav;
-@use "./scss/hero"as hero;
-@use "./scss/about"as about;
-@use "./scss/mytechnologies"as skillset;
-@use "./scss/projects"as projects;
-@use "./scss/contact"as contact;
+@use "./scss/navbar" as nav;
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
-  text-decoration: none;
-  list-style: none;
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	font-family: 'Ubuntu', sans-serif;
+  	text-decoration: none;
+  	list-style: none;
 }
 
 html {
-  scroll-behavior: smooth;
+  	scroll-behavior: smooth;
 }
 
 body {
-  background-color: #e3e9f7;
-  // background-color: #bbd1d8;
+  	background-color: #e3e9f7;
+  	// background-color: #bbd1d8;
 }
 
 img {
-  display: block;
+  	display: block;
 }
 
 .occupation {
-  color: #420b5e;
-  font-weight: bold;
+  	color: #420b5e;
+  	font-weight: bold;
+}
+
+h2 {
+	font-size: v.$h2-fontSize;
+	font-weight: v.$h2-fontWeight-SB;
+	line-height: v.$h2-fontLineHeight;
+	letter-spacing: v.$h2-letterSpacing;
+}
+
+p {
+	font-size: v.$p1-fontSize;
+	line-height: v.$p1-fontLineHeight;
 }
 
 header {
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  	height: 70px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
 
-  // Navbar
-  @include nav.Navbar();
+  	// Navbar
+  	@include nav.Navbar();
 }
 
 main {
-  @include hero.Hero();
+  	.introduction {
+		max-width: 710px;
+		padding: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 2px solid v.$neutral-300;
+		border-radius: 16px;
 
-  .about-section {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
+		.profile {
+			width: fit-content;
+			height: auto;
+			display: flex;
+			gap: 20px;
 
-    @include about.About();
+			&__pic {
+				width: 100px;
+				height: 100px;
+				border-radius: 100%;
+				object-fit: cover;
+			}
 
-    @media screen and (max-width: 620px) {
-      padding: 32px;
-    }
-  }
+			&__text {
+				width: fit-content;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 4px;
 
-  @include skillset.MyTechnologies();
-  @include projects.Projects();
-  @include contact.Contact();
+				p {
+					color: v.$neutral-500;
+				}
+			}
+		}
+
+		.socials {
+			width: fit-content;
+			display: flex;
+			gap: 16px;
+			
+			&__icons {
+				width: 32px;
+				height: 32px;
+			}
+		}
+  	}
 }
