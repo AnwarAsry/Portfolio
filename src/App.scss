@@ -1,5 +1,6 @@
 @use "./scss/abstracts/variables"as v;
 @use "./scss/navbar" as nav;
+@use "./scss/abstracts/Headings" as head;
 
 *,
 *::after,
@@ -31,10 +32,20 @@ img {
 }
 
 h2 {
-	font-size: v.$h2-fontSize;
-	font-weight: v.$h2-fontWeight-SB;
-	line-height: v.$h2-fontLineHeight;
-	letter-spacing: v.$h2-letterSpacing;
+
+	@include head.headingTwo(v.$fontWeight-B);
+}
+h3 {
+
+	@include head.headingThree(v.$fontWeight-B);
+}
+h4 {
+
+	@include head.headingFour(v.$fontWeight-B);
+}
+h6 {
+
+	@include head.headingSix(v.$fontWeight-B);
 }
 
 p {

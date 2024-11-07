@@ -1,0 +1,41 @@
+@use "variables" as v;
+
+@mixin headingTwo($weight: null) {
+    font-size: v.$fontSize-x-lg;
+	line-height: v.$lineHeight-xxx-lg;
+	letter-spacing: v.$letterSpacing;
+
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
+
+@mixin headingThree($weight: null) {
+    font-size: v.$fontSize-xxx-big;
+	line-height: v.$lineHeight-x-lg;
+	letter-spacing: v.$letterSpacing;
+    
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
+
+@mixin headingFour($weight: null) {
+    font-size: v.$fontSize-xx-big;
+	line-height: v.$lineHeight-lg;
+	letter-spacing: v.$letterSpacing;
+    
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
+
+@mixin headingSix($weight: null) {
+    font-size: v.$fontSize-x-big;
+	line-height: v.$lineHeight-xxx-big;
+	letter-spacing: v.$letterSpacing;
+
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
