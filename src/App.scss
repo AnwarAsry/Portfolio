@@ -2,6 +2,7 @@
 @use "./scss/navbar" as nav;
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
+@use "./scss/Buttons" as btn;
 
 *,
 *::after,
@@ -113,6 +114,7 @@ main {
 		padding: v.$spacing-md;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: v.$spacing-xxx-big;
 		border-radius: v.$radius-sm;
 		box-shadow: 0 6px 15px -2px #10182814;
@@ -124,4 +126,8 @@ main {
 			gap: v.$spacing-x-sm;
 		}
 	}
+}
+
+.primaryButton {
+	@include btn.PrimaryButton();
 }

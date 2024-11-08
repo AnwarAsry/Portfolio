@@ -8,6 +8,7 @@
 
     // FOR ICONS AND TEXT
     display: flex;
+    align-items: center;
     gap: v.$spacing-x-sm;
 
     border-radius: v.$radius-sm;
@@ -16,8 +17,18 @@
     color: #fff;
     background-color: #4391ff;
 
+    .icons {
+        scale: 1.2;
+    }
+
     &:hover {
         background-color: #216dd9;
+    }
+
+    // EXIST BECAUSE OF COLOR OF TEXT NOT CHANGING
+    a {
+        // Inherit color from mixin
+        color: inherit;
     }
 }
 
