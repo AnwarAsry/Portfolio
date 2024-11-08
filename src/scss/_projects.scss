@@ -1,5 +1,4 @@
 @use "./abstracts/variables" as v;
-@use "./mixins" as mx;
 @use "./Tags" as tag;
 
 @mixin ProjectListWrapper() {
@@ -17,9 +16,11 @@
     .project-card__img {
         width: 250px;
         border-radius: v.$radius-sm;
+        object-fit: cover;
     }
 
     .project-card__details {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: v.$spacing-x-sm;
@@ -63,45 +64,3 @@
         @include tag.Tag();
     }
 }
-
-
-
-
-// @mixin Projects() {
-//     .projects {
-//         margin-bottom: 64px;
-
-//         &__title {
-//             @include mx.Title();
-
-//             margin-top: 64px;
-//             font-weight: 600;
-//             text-align: center;
-//             word-spacing: .12rem;
-//             color: #082425;
-//         }
-
-//         hr {
-//             max-width: 880px;
-//             margin: 8px auto 16px;
-//             border: 1px solid #C6C6C6;
-
-//             @media screen and (max-width: 956px) {
-//                 width: 75%;
-//             }
-//         }
-
-//         &__wrapper {
-//             width: fit-content;
-//             margin: 0 auto;
-//             padding: 0 16px;
-//             display: flex;
-//             flex-direction: column;
-//             gap: 32px;
-
-//             .card {
-//                 @include ProjectCard();
-//             }
-//         }
-//     }
-// }

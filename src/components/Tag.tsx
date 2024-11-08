@@ -1,5 +1,9 @@
-export const Tag = () => {
+interface ITagProps {
+    text: string;
+}
+
+export const Tag = ({ text }: ITagProps) => {
     return <>
-        <span className="tag">React</span>
+        <span className="tag">{text}</span>
     </>
 }
