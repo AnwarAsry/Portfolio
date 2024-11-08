@@ -1,0 +1,13 @@
+@use "./abstracts/variables" as v;
+
+@mixin Tag() {
+    width: fit-content;
+    padding: v.$spacing-xx-sm v.$spacing-x-sm;
+    border-radius: v.$radius-xx-sm;
+    font-size: v.$fontSize-x-sm;
+    font-weight: v.$fontWeight-M;
+    line-height: v.$lineHeight-sm;
+    background-color: #2D4553;
+
+    color: #FFFFFF;
+}

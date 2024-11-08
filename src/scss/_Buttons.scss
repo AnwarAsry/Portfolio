@@ -1,5 +1,39 @@
-@use "variables" as v;
+@use "./abstracts/variables" as v;
+@use "./abstracts/Paragraphs" as text;
 
-@mixin PrimaryButton() {}
+@mixin PrimaryButton() {
+    width: fit-content;
+    min-height: 52px;
+    padding: 0 v.$spacing-x-big;
 
-@mixin SecondaryButton() {}
+    // FOR ICONS AND TEXT
+    display: flex;
+    gap: v.$spacing-x-sm;
+
+    border-radius: v.$radius-sm;
+
+    @include text.normalText(v.$fontWeight-SB);
+    color: #fff;
+    background-color: #4391ff;
+
+    &:hover {
+        background-color: #216dd9;
+    }
+}
+
+@mixin LinkButton() {
+    width: fit-content;
+    height: 42px;
+    padding: 0 v.$spacing-x-big;
+
+    border-radius: v.$radius-sm;
+
+    @include text.normalText(v.$fontWeight-SB);
+    color: #4391ff;
+    background-color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+        background-color: #216dd9;
+    }
+}

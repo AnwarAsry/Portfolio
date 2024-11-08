@@ -1,6 +1,7 @@
 @use "./scss/abstracts/variables"as v;
 @use "./scss/navbar" as nav;
 @use "./scss/abstracts/Headings" as head;
+@use "./scss/abstracts/Paragraphs" as text;
 
 *,
 *::after,
@@ -49,8 +50,7 @@ h6 {
 }
 
 p {
-	font-size: v.$p1-fontSize;
-	line-height: v.$p1-fontLineHeight;
+	@include text.normalText();
 }
 
 header {
@@ -95,6 +95,7 @@ main {
 
 				p {
 					color: v.$neutral-500;
+					font-weight: v.$fontWeight-M;
 				}
 			}
 		}
@@ -110,4 +111,6 @@ main {
 			}
 		}
   	}
+
+	
 }

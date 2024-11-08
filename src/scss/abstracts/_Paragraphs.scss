@@ -1,1 +1,10 @@
-@mixin paragraph() {}
+@use "variables" as v;
+
+@mixin normalText($weight: null) {
+    font-size: v.$fontSize-md;
+	line-height: v.$lineHeight-x-big;
+    
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
