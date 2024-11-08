@@ -3,6 +3,7 @@
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
 @use "./scss/Buttons" as btn;
+@use "./scss/mixins" as mx;
 
 *,
 *::after,
@@ -130,4 +131,8 @@ main {
 
 .primaryButton {
 	@include btn.PrimaryButton();
+}
+
+.sectionTitle {
+	@include mx.SectionTitle();
 }

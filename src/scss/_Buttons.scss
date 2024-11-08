@@ -16,6 +16,7 @@
     @include text.normalText(v.$fontWeight-SB);
     color: #fff;
     background-color: #4391ff;
+    transition: background-color ease-in-out 100ms;
 
     .icons {
         scale: 1.2;
