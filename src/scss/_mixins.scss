@@ -6,10 +6,6 @@
     flex-direction: column;
     gap: v.$spacing-x-sm;
 
-    h3 {
-        @include head.headingThree();
-    }
-
     hr {
         border-top: none;
         border-width: 2px;

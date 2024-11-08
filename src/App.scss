@@ -1,8 +1,8 @@
 @use "./scss/abstracts/variables"as v;
-@use "./scss/navbar" as nav;
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
 @use "./scss/Buttons" as btn;
+@use "./scss/Projects" as pro;
 @use "./scss/mixins" as mx;
 
 *,
@@ -29,11 +29,6 @@ img {
   	display: block;
 }
 
-.occupation {
-  	color: #420b5e;
-  	font-weight: bold;
-}
-
 h2 {
 	@include head.headingTwo(v.$fontWeight-B);
 }
@@ -49,16 +44,6 @@ h6 {
 
 p {
 	@include text.normalText();
-}
-
-header {
-  	height: 70px;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-
-  	// Navbar
-  	@include nav.Navbar();
 }
 
 main {
@@ -127,12 +112,30 @@ main {
 			gap: v.$spacing-x-sm;
 		}
 	}
+
+	.projectsSection {
+		display: flex;
+		flex-direction: column;
+		gap: v.$spacing-xx-big;
+
+		.projects {
+			@include pro.ProjectListWrapper();
+		}
+	}
 }
 
 .primaryButton {
 	@include btn.PrimaryButton();
 }
 
+.linkBtn {
+	@include btn.LinkButton();
+}
+
 .sectionTitle {
 	@include mx.SectionTitle();
+}
+
+.project-card {
+	@include pro.ProjectCard();
 }

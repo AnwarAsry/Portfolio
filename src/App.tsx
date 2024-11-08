@@ -13,11 +13,11 @@ function App() {
 			<main id="content">
 				<Introduction />
 				<About />
-				<section>
+				<section className="projectsSection">
 					<SectionTitle text='Currently working' />
 					<Projects />
 				</section>
-				<section>
+				<section className="projectsSection">
 					<SectionTitle text='Past projects' />
 					<Projects />
 				</section>

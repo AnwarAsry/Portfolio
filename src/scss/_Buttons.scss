@@ -2,6 +2,7 @@
 @use "./abstracts/Paragraphs" as text;
 
 @mixin PrimaryButton() {
+    cursor: pointer;
     width: fit-content;
     min-height: 52px;
     padding: 0 v.$spacing-x-big;
@@ -34,10 +35,12 @@
 }
 
 @mixin LinkButton() {
-    width: fit-content;
-    height: 42px;
+    min-height: 42px;
+    max-height: 42px;
     padding: 0 v.$spacing-x-big;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: v.$radius-sm;
 
     @include text.normalText(v.$fontWeight-SB);
@@ -46,6 +49,7 @@
 
     &:hover {
         text-decoration: underline;
-        background-color: #216dd9;
+        color: #fff;
+        background-color: #4391ff;
     }
 }
