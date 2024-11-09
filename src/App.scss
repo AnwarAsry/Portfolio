@@ -21,8 +21,17 @@ html {
 }
 
 body {
+	display: grid;
+	grid-template-rows: v.$spacing-x-lg [content-start] auto [content-end] v.$spacing-xxx-lg;
+	grid-template-columns: repeat(3, 1fr) [content-start] repeat(6, 1fr) [content-end] repeat(3, 1fr);
+	gap: v.$spacing-big;
   	background-color: #e3e9f7;
   	// background-color: #bbd1d8;
+}
+
+#root {
+	grid-column: content;
+	grid-row: content;
 }
 
 img {
@@ -47,6 +56,10 @@ p {
 }
 
 main {
+	display: flex;
+	flex-direction: column;
+	gap: v.$spacing-huge;
+
   	.introduction {
 		max-width: 710px;
 		padding: 24px;
