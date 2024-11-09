@@ -10,6 +10,7 @@ export const ProjectsPresentation = () => {
         name: "Something",
         html_url: "#",
         description: placeholder,
+        created_at: "",
         language: "TypeScript",
         topics: ["react", "vue", "ts"],
         image: hello,

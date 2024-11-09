@@ -3,7 +3,7 @@ export interface Project {
     name: string,
     html_url: string,
     description: string,
-    created_at?: Date,
+    created_at: string,
     language: string,
     topics: string[],
     image: string,
