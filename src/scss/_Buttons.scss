@@ -2,7 +2,6 @@
 @use "./abstracts/Paragraphs" as text;
 
 @mixin PrimaryButton() {
-    cursor: pointer;
     width: fit-content;
     min-height: 52px;
     padding: 0 v.$spacing-x-big;
@@ -25,12 +24,6 @@
 
     &:hover {
         background-color: #216dd9;
-    }
-
-    // EXIST BECAUSE OF COLOR OF TEXT NOT CHANGING
-    a {
-        // Inherit color from mixin
-        color: inherit;
     }
 }
 

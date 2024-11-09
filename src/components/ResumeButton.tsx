@@ -3,9 +3,6 @@ import { HiOutlineDownload } from "react-icons/hi";
 
 export const ResumeButton = () => {
     return <>
-        <div className="primaryButton">
-            <HiOutlineDownload className="icons" />
-            <a href={CV} target="_blank" id="downloadCV" download>Download CV</a>
-        </div>
+        <a href={CV} target="_blank" className="primaryButton" id="downloadCV" download><HiOutlineDownload className="icons" />Download CV</a>
     </>
 }
