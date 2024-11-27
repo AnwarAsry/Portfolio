@@ -20,14 +20,14 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     {
                         project.topics && <div className="project-card__tech">
                             {
-                                project.topics.map(tag => {
-                                    return <Tag text={tag} />
+                                project.topics.map((tag, i) => {
+                                    return <Tag text={tag} key={i} />
                                 })
                             }
                         </div>
                     }
                 </div>
-                <a href={project.html_url} target="_blank" className="linkBtn">Explore more</a>
+                <a href={project.repository} target="_blank" className="linkBtn">Explore more</a>
             </div>
         </div>
     </>

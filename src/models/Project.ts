@@ -1,10 +1,12 @@
 export interface Project {
     id: number,
     name: string,
-    html_url: string,
     description: string,
-    created_at: string,
-    language: string,
     topics: string[],
+    repository: string,
+    liveDemo?: string,
+    created: string,
+    lastUpdated: string,
+    languages: string[],
     image: string,
 }

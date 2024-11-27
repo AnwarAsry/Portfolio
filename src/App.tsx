@@ -3,12 +3,9 @@ import { About } from './components/About/About.tsx'
 import { Introduction } from './components/Introduction.tsx'
 import { ProjectsPresentation } from './components/Projects/ProjectsPresentation.tsx'
 import { SectionTitle } from './components/SectionTitle.tsx'
-import { getRepos } from './services/repoService.ts'
+import projects from "./projects.json"
 
 function App() {
-	const handleDataFetch = async () => {
-		await getRepos();
-	}
 
 	return (
 		<>
@@ -17,14 +14,12 @@ function App() {
 				<About />
 				<section className="projectsSection">
 					<SectionTitle text='Currently working' />
-					<ProjectsPresentation />
+					<ProjectsPresentation projects={projects} />
 				</section>
 				<section className="projectsSection">
 					<SectionTitle text='Past projects' />
-					<ProjectsPresentation />
+					<ProjectsPresentation projects={projects} />
 				</section>
-
-				<button onClick={handleDataFetch}>TEST FETCH DATA</button>
 			</main>
 		</>
 	)

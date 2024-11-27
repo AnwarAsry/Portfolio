@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Igor",
+        "description": "Igor is a Discord bot that provides detailed information on Persona 5 and Persona 5 Royal, covering characters, items, abilities, and more. Designed to make game info easily accessible, it allows users to get insights directly in Discord without needing external searches. This bot is perfect for newcomers and seasoned fans, streamlining gameplay reasearch and enhancing community engagement in Persona 5-focused servers.",
+        "topics": ["discord.py", "Discord", "Python3", "MongoDB"],
+        "repository": "https://github.com/AnwarAsry/shadow-bot",
+        "liveDemo": "",
+        "created": "",
+        "lastUpdated": "",
+        "languages": ["Python"],
+        "image": "../public/images/Igor.png"
+    },
+    {
+        "id": 2,
+        "name": "Pomodoro Sudy Technique",
+        "description": "A timer application that lets users use the study techniqye called pomodoro.",
+        "topics": ["vue 3", "scss", "typescript"],
+        "repository": "https://github.com/AnwarAsry/Pomodoro-Sudy-Technique",
+        "liveDemo": "",
+        "created": "",
+        "lastUpdated": "",
+        "languages": ["Typescript", "Vue", "scss"],
+        "image": ""
+    }
+]
