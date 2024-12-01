@@ -2,14 +2,15 @@
     {
         "id": 1,
         "name": "Igor",
-        "description": "Igor is a Discord bot that provides detailed information on Persona 5 and Persona 5 Royal, covering characters, items, abilities, and more. Designed to make game info easily accessible, it allows users to get insights directly in Discord without needing external searches. This bot is perfect for newcomers and seasoned fans, streamlining gameplay reasearch and enhancing community engagement in Persona 5-focused servers.",
+        "description": "Igor is a Discord bot that provides detailed information on Persona 5 and Persona 5 Royal, covering characters, items, abilities, and more. Designed to make game info easily accessible, and allows users to get insights directly in Discord without needing external searches.",
         "topics": ["discord.py", "Discord", "Python3", "MongoDB"],
         "repository": "https://github.com/AnwarAsry/shadow-bot",
         "liveDemo": "",
         "created": "",
         "lastUpdated": "",
         "languages": ["Python"],
-        "image": "../public/images/Igor.png"
+        "image": "../public/images/Igor.png",
+        "working": false
     },
     {
         "id": 2,
@@ -21,6 +22,33 @@
         "created": "",
         "lastUpdated": "",
         "languages": ["Typescript", "Vue", "scss"],
-        "image": ""
+        "image": "",
+        "working": false
+    },
+    {
+        "id": 3,
+        "name": "Password Manager",
+        "description": "A Password Management Website that securely stores and manages login credentials, featuring Google authentication, encrypted storage, and a user-friendly dashboard.",
+        "topics": ["nextjs", "mongoose", "typescript", "MongoDB", "sass"],
+        "repository": "https://github.com/AnwarAsry/Password-Manager",
+        "liveDemo": "",
+        "created": "28 November 2024",
+        "lastUpdated": "",
+        "languages": ["Typescript", "scss", "css"],
+        "image": "",
+        "working": true
+    },
+    {
+        "id": 4,
+        "name": "WeatherAPI",
+        "description": "Weather application designed to keep you informed about the latest weather conditions anywhere in the world.",
+        "topics": ["javascript", "css", "html"],
+        "repository": "https://github.com/AnwarAsry/Weather-API",
+        "liveDemo": "",
+        "created": "16 November 2023",
+        "lastUpdated": "29 November 2024",
+        "languages": ["javascript", "css", "html"],
+        "image": "../public/images/Weather-API.png",
+        "working": false
     }
 ]
