@@ -1,8 +1,7 @@
 import './App.scss'
-import { About } from './components/About/About.tsx'
-import { Introduction } from './components/Introduction.tsx'
-import { ProjectsPresentation } from './components/Projects/ProjectsPresentation.tsx'
-import { SectionTitle } from './components/SectionTitle.tsx'
+import { IntroductionCard } from './components/IntroductionCard.tsx'
+import { About } from './components/About/About'
+import { ProjectsSection } from './components/ProjectsSection.tsx'
 import projects from "./projects.json"
 
 function App() {
@@ -13,16 +12,10 @@ function App() {
 	return (
 		<>
 			<main id="content">
-				<Introduction />
+				<IntroductionCard />
 				<About />
-				<section className="projectsSection">
-					<SectionTitle text='Currently working' />
-					<ProjectsPresentation projects={currentProjects} />
-				</section>
-				<section className="projectsSection">
-					<SectionTitle text='Past projects' />
-					<ProjectsPresentation projects={pastProjects} />
-				</section>
+				<ProjectsSection title="Currently working" projects={currentProjects} />
+				<ProjectsSection title="Past projects" projects={pastProjects} />
 			</main>
 		</>
 	)

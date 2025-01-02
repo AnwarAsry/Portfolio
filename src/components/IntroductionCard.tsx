@@ -1,7 +1,7 @@
 import { IoIosMail, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 import profile from "../assets/Images/profile.jpeg";
 
-export const Introduction = () => {
+export const IntroductionCard = () => {
     return <>
         <section className="introduction">
             <div className="profile">
