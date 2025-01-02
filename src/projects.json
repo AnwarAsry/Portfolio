@@ -29,11 +29,11 @@
         "id": 3,
         "name": "Password Manager",
         "description": "A Password Management Website that securely stores and manages login credentials, featuring Google authentication, encrypted storage, and a user-friendly dashboard.",
-        "topics": ["nextjs", "mongoose", "typescript", "MongoDB", "sass"],
+        "topics": ["mongoose", "typescript", "sass", "NextJS", "MongoDB", "Google API", "NextAuthJS", "CryptoJS"],
         "repository": "https://github.com/AnwarAsry/Password-Manager",
         "liveDemo": "",
         "created": "28 November 2024",
-        "lastUpdated": "",
+        "lastUpdated": "1 January 2025",
         "languages": ["Typescript", "scss", "css"],
         "image": "",
         "working": true

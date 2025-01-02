@@ -2,6 +2,7 @@
 
 @mixin Tag() {
     width: fit-content;
+    height: fit-content;
     padding: v.$spacing-xx-sm v.$spacing-x-sm;
     border-radius: v.$radius-xx-sm;
     font-size: v.$fontSize-x-sm;

@@ -14,7 +14,7 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
             <div className="project-card__details">
                 <div className="project-card__info">
                     <div className="project-card__text">
-                        <h4>{project.name}</h4>
+                        <h4><a href={project.repository} target="_blank">{project.name}</a></h4>
                         <p>{project.description ? project.description : "No description"}</p>
                     </div>
                     {

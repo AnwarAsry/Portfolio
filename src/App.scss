@@ -53,6 +53,14 @@ h6 {
 	@include head.headingSix(v.$fontWeight-B);
 }
 
+a {
+	color: inherit;
+	
+	&:hover {
+		text-decoration: underline
+	}
+}
+
 p {
 	@include text.normalText();
 }
