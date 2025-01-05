@@ -29,6 +29,12 @@ body {
   	// background-color: rgb(82, 82, 82);
   	// background-color: #bbd1d8;
 
+	@media screen and (max-width: 400px) {
+		overflow-x: hidden;
+		grid-template-columns: v.$spacing-big [content-start] auto [content-end] v.$spacing-big;
+		gap: 0;
+	}
+
 }
 
 #root {
@@ -69,54 +75,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: v.$spacing-huge;
-
-  	.introduction {
-		max-width: 710px;
-		padding: 24px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		border: 2px solid v.$neutral-300;
-		border-radius: 16px;
-
-		.profile {
-			width: fit-content;
-			height: auto;
-			display: flex;
-			gap: 20px;
-
-			&__pic {
-				width: 100px;
-				height: 100px;
-				border-radius: 100%;
-				object-fit: cover;
-			}
-
-			&__text {
-				width: fit-content;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				gap: 4px;
-
-				p {
-					color: v.$neutral-500;
-					font-weight: v.$fontWeight-M;
-				}
-			}
-		}
-
-		.socials {
-			width: fit-content;
-			display: flex;
-			gap: 16px;
-			
-			&__icons {
-				width: 32px;
-				height: 32px;
-			}
-		}
-  	}
 
 	.about {
 		max-width: 710px;
