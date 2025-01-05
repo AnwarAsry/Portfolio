@@ -2,18 +2,18 @@
 
 @mixin Mobile() {
     @media screen and (max-width: v.$mobile) {
-        @content
+        @content;
     }
 }
 
 @mixin Tablet() {
     @media screen and (max-width: v.$tablet) {
-        @content
+        @content;
     }
 }
 
 @mixin Laptop() {
     @media screen and (max-width: v.$laptop) {
-        @content
+        @content;
     }
 }
