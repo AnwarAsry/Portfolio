@@ -23,13 +23,23 @@
 }
 
 @mixin headingThree($weight: null) {
-    font-size: v.$fontSize-xxx-big;
-	line-height: v.$lineHeight-x-lg;
+    font-size: v.$fontSize-lg;
+	line-height: v.$lineHeight-xx-lg;
 	letter-spacing: v.$letterSpacing;
     
     @if $weight != null {
         font-weight: $weight;
     }
+
+    @include mx.Tablet {
+        font-size: v.$fontSize-xxx-big;
+	    line-height: v.$lineHeight-x-lg;
+	}
+
+    @include mx.Mobile {
+        font-size: v.$fontSize-xx-big;
+	    line-height: v.$lineHeight-lg;
+	}
 }
 
 @mixin headingFour($weight: null) {
@@ -50,4 +60,9 @@
     @if $weight != null {
         font-weight: $weight;
     }
+
+    @include mx.Mobile {
+        font-size: v.$fontSize-big;
+	    line-height: v.$lineHeight-xx-big;
+	}
 }

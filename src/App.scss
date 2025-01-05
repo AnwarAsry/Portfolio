@@ -101,6 +101,14 @@ main {
 		.projects {
 			@include pro.ProjectListWrapper();
 		}
+
+		@include mx.Mobile {
+			gap: v.$spacing-x-big;
+		}
+	}
+
+	@include mx.Mobile {
+		gap: v.$spacing-x-lg;
 	}
 }
 

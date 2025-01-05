@@ -1,7 +1,9 @@
 @use "./abstracts/variables" as v;
 @use "./Tags" as tag;
+@use "mixins" as mx;
 
 @mixin ProjectListWrapper() {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: v.$spacing-x-big;
@@ -46,16 +48,18 @@
         gap: v.$spacing-xx-sm;
 
         p {
-            font-size: v.$fontSize-sm;
-            line-height: v.$lineHeight-x-big;
-            font-weight: v.$fontWeight-N;
-
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             word-wrap: break-word;
             text-overflow: ellipsis;
+
+            @include mx.Mobile {
+                font-size: v.$fontSize-sm;
+                line-height: v.$lineHeight-x-big;
+                font-weight: v.$fontWeight-N;
+            }
         }
     }
 
@@ -66,5 +70,10 @@
 
     .tag {
         @include tag.Tag();
+    }
+
+    @include mx.Mobile {
+        height: fit-content;
+        flex-direction: column;
     }
 }
