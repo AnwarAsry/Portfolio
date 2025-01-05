@@ -25,16 +25,15 @@ body {
 	grid-template-rows: v.$spacing-x-lg [content-start] auto [content-end] v.$spacing-xxx-lg;
 	grid-template-columns: repeat(3, 1fr) [content-start] repeat(6, 1fr) [content-end] repeat(3, 1fr);
 	gap: v.$spacing-big;
+	place-content: center;
   	background-color: #e3e9f7;
   	// background-color: rgb(82, 82, 82);
   	// background-color: #bbd1d8;
 
-	@media screen and (max-width: 400px) {
-		overflow-x: hidden;
-		grid-template-columns: v.$spacing-big [content-start] auto [content-end] v.$spacing-big;
-		gap: 0;
+	@include mx.Mobile {
+		display: block;
+		padding: v.$spacing-xxx-big v.$spacing-sm;
 	}
-
 }
 
 #root {

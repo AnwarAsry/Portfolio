@@ -2,6 +2,7 @@
 // @use "./abstracts/Headings" as head;
 
 @mixin SectionTitle() {
+    // max-width: 710px;
     display: flex;
     flex-direction: column;
     gap: v.$spacing-x-sm;
@@ -16,7 +17,19 @@
 }
 
 @mixin Mobile() {
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: v.$mobile) {
+        @content
+    }
+}
+
+@mixin Tablet() {
+    @media screen and (max-width: v.$tablet) {
+        @content
+    }
+}
+
+@mixin Laptop() {
+    @media screen and (max-width: v.$laptop) {
         @content
     }
 }

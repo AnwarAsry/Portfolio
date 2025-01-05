@@ -17,6 +17,10 @@
         width: 250px;
         border-radius: v.$radius-sm;
         object-fit: cover;
+
+        @media screen and (max-width: 630px) {
+            width: 76px;
+        }
     }
 
     .project-card__details {
