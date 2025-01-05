@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "../mixins" as mx;
 
 @mixin normalText($weight: null) {
     font-size: v.$fontSize-md;
@@ -6,5 +7,10 @@
     
     @if $weight != null {
         font-weight: $weight;
+    }
+
+    @include mx.Mobile {
+        font-size: v.$fontSize-sm;
+        line-height: v.$lineHeight-x-big;
     }
 }

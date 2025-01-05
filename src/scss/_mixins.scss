@@ -1,5 +1,5 @@
 @use "./abstracts/variables" as v;
-@use "./abstracts/Headings" as head;
+// @use "./abstracts/Headings" as head;
 
 @mixin SectionTitle() {
     display: flex;
@@ -12,5 +12,11 @@
         border-right: none;
         border-width: 2px;
         border-color: v.$neutral-300;
+    }
+}
+
+@mixin Mobile() {
+    @media screen and (max-width: 400px) {
+        @content
     }
 }
