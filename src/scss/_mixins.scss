@@ -1,20 +1,4 @@
 @use "./abstracts/variables" as v;
-// @use "./abstracts/Headings" as head;
-
-@mixin SectionTitle() {
-    // max-width: 710px;
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacing-x-sm;
-
-    hr {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-width: 2px;
-        border-color: v.$neutral-300;
-    }
-}
 
 @mixin Mobile() {
     @media screen and (max-width: v.$mobile) {

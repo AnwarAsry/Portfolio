@@ -2,7 +2,6 @@
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
 @use "./scss/Buttons" as btn;
-@use "./scss/Projects" as pro;
 @use "./scss/mixins" as mx;
 
 *,
@@ -93,20 +92,6 @@ main {
 		}
 	}
 
-	.projectsSection {
-		display: flex;
-		flex-direction: column;
-		gap: v.$spacing-xx-big;
-
-		.projects {
-			@include pro.ProjectListWrapper();
-		}
-
-		@include mx.Mobile {
-			gap: v.$spacing-x-big;
-		}
-	}
-
 	@include mx.Mobile {
 		gap: v.$spacing-x-lg;
 	}
@@ -114,16 +99,4 @@ main {
 
 .primaryButton {
 	@include btn.PrimaryButton();
-}
-
-.linkBtn {
-	@include btn.LinkButton();
-}
-
-.sectionTitle {
-	@include mx.SectionTitle();
-}
-
-.project-card {
-	@include pro.ProjectCard();
 }

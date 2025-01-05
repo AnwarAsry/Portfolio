@@ -1,0 +1,66 @@
+@use "./abstracts/variables" as v;
+@use "mixins" as mx;
+@use "Buttons" as btn;
+
+.ProjectSection{
+	display: flex;
+	flex-direction: column;
+	gap: v.$spacing-xx-big;
+
+	@include mx.Mobile {
+		gap: v.$spacing-x-big;
+	}
+}
+
+.ProjectListWrapper {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-x-big;
+}
+
+.ProjectCard {
+    max-width: 710px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-x-sm;
+    overflow: hidden;
+}
+
+.ProjectDetailsContainer {
+    height: 100%;
+    padding: v.$spacing-sm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: v.$spacing-x-sm;
+    border-radius: v.$radius-sm;
+    background-color: #fff;
+}
+
+.ProjectTitleAndDescCont {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-xx-sm;
+
+}
+
+.ProjectDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+
+    @include mx.Mobile {
+        font-size: v.$fontSize-sm;
+        line-height: v.$lineHeight-x-big;
+        font-weight: v.$fontWeight-N;
+    }
+}
+
+.ProjectLinkBtn {
+    @include btn.LinkButton();
+}

@@ -1,7 +1,7 @@
 import './App.scss'
 import { IntroductionCard } from './components/IntroductionCard.tsx'
 import { About } from './components/About/About'
-import { ProjectsSection } from './components/ProjectsSection.tsx'
+import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
 import projects from "./projects.json"
 
 function App() {

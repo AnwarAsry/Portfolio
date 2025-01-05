@@ -2,7 +2,7 @@ import { ResumeButton } from "../ResumeButton"
 
 export const About = () => {
     return <>
-        <div className="about">
+        <section className="about">
             <div className="about__text">
                 <div>
                     <h6>About Me</h6>
@@ -16,6 +16,6 @@ export const About = () => {
                 </p>
             </div>
             <ResumeButton />
-        </div>
+        </section>
     </>
 }

@@ -1,6 +1,12 @@
 @use "./abstracts/variables" as v;
 
-@mixin Tag() {
+.TagsContainer {
+    display: flex;
+    gap: v.$spacing-x-sm;
+    overflow: hidden;
+}
+
+.TagBox {
     width: fit-content;
     height: fit-content;
     padding: v.$spacing-xx-sm v.$spacing-x-sm;
