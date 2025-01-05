@@ -10,6 +10,11 @@
         font-weight: $weight;
     }
 
+    @include mx.Tablet {
+        font-size: v.$fontSize-xxx-big;
+	    line-height: v.$lineHeight-x-lg;
+	}
+
     @include mx.Mobile {
         font-size: v.$fontSize-xx-big;
 	    line-height: v.$lineHeight-lg;

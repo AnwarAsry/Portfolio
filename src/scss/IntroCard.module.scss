@@ -35,6 +35,11 @@
     border-radius: 100%;
     object-fit: cover;
 
+    @include mx.Tablet {
+        width: 88px;
+        height: 88px;
+	}
+
     @include mx.Mobile {
         width: 76px;
         height: 76px;

@@ -8,7 +8,7 @@
     @if $weight != null {
         font-weight: $weight;
     }
-
+    
     @include mx.Mobile {
         font-size: v.$fontSize-sm;
         line-height: v.$lineHeight-x-big;
