@@ -96,6 +96,10 @@ main {
 		}
 	}
 
+	@include mx.Tablet {
+		gap: v.$spacing-xx-lg;
+	}
+
 	@include mx.Mobile {
 		gap: v.$spacing-x-lg;
 	}

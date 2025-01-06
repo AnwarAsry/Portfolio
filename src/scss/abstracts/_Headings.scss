@@ -4,58 +4,55 @@
 @mixin headingTwo($weight: null) {
     font-size: v.$fontSize-x-lg;
 	line-height: v.$lineHeight-xxx-lg;
-	letter-spacing: v.$letterSpacing;
+	letter-spacing: - calc(v.$fontSize-x-lg * 0.02);
 
     @if $weight != null {
         font-weight: $weight;
     }
 
-    @include mx.Tablet {
-        font-size: v.$fontSize-xxx-big;
-	    line-height: v.$lineHeight-x-lg;
-	}
-
     @include mx.Mobile {
-        font-size: v.$fontSize-xx-big;
-	    line-height: v.$lineHeight-lg;
-	    letter-spacing: 0;
+        font-size: v.$fontSize-lg;
+	    line-height: v.$lineHeight-xx-lg;
+        letter-spacing: - calc(v.$fontSize-lg * 0.02);
 	}
 }
 
 @mixin headingThree($weight: null) {
     font-size: v.$fontSize-lg;
 	line-height: v.$lineHeight-xx-lg;
-	letter-spacing: v.$letterSpacing;
+    letter-spacing: - calc(v.$fontSize-lg * 0.02);
     
     @if $weight != null {
         font-weight: $weight;
     }
 
-    @include mx.Tablet {
+    @include mx.Mobile {
         font-size: v.$fontSize-xxx-big;
 	    line-height: v.$lineHeight-x-lg;
-	}
-
-    @include mx.Mobile {
-        font-size: v.$fontSize-xx-big;
-	    line-height: v.$lineHeight-lg;
+        letter-spacing: - calc(v.$fontSize-xxx-big * 0.02);
 	}
 }
 
 @mixin headingFour($weight: null) {
-    font-size: v.$fontSize-xx-big;
-	line-height: v.$lineHeight-lg;
-	letter-spacing: v.$letterSpacing;
+    font-size: v.$fontSize-xxx-big;
+	line-height: v.$lineHeight-x-lg;
+	letter-spacing: - calc(v.$fontSize-xxx-big * 0.02);
     
     @if $weight != null {
         font-weight: $weight;
     }
+
+    @include mx.Mobile {
+        font-size: v.$fontSize-xx-big;
+	    line-height: v.$lineHeight-lg;
+        letter-spacing: 0;
+	}
 }
 
 @mixin headingSix($weight: null) {
     font-size: v.$fontSize-x-big;
 	line-height: v.$lineHeight-xxx-big;
-	letter-spacing: v.$letterSpacing;
+	letter-spacing: - calc(v.$fontSize-x-big * 0.02);
 
     @if $weight != null {
         font-weight: $weight;
@@ -64,5 +61,6 @@
     @include mx.Mobile {
         font-size: v.$fontSize-big;
 	    line-height: v.$lineHeight-xx-big;
+        letter-spacing: 0;
 	}
 }
