@@ -2,7 +2,6 @@
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
 @use "./scss/abstracts/Labels" as lab;
-@use "./scss/Buttons" as btn;
 @use "./scss/mixins" as mx;
 
 *,
@@ -100,8 +99,4 @@ main {
 	@include mx.Mobile {
 		gap: v.$spacing-x-lg;
 	}
-}
-
-.primaryButton {
-	@include btn.PrimaryButton();
 }

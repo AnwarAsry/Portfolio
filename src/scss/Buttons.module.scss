@@ -1,0 +1,61 @@
+@use "./abstracts/variables" as v;
+@use "./abstracts/Paragraphs" as text;
+@use "mixins" as mx;
+
+@mixin BtnGroundStyle() {
+    padding: 0 v.$spacing-x-big;
+    
+    // FOR ICONS AND TEXT
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: v.$spacing-x-sm;
+    
+    border-radius: v.$radius-sm;
+    
+    @include text.normalText(v.$fontWeight-SB);
+
+    
+    transition: background-color ease-in-out 100ms;
+    
+    .icons {
+        scale: 1.2;
+    }
+    
+    &:hover {
+        background-color: v.$BtnHover;
+    }
+}
+
+.PrimaryBtn {
+    @include BtnGroundStyle();
+
+    width: fit-content;
+    height: 52px;
+
+    color: v.$BtnTextColor;
+    background-color: v.$BtnBgColor;
+    
+    @include mx.Mobile {
+        height: 40px;
+    }
+}
+
+.SecondaryBtn {
+    @include BtnGroundStyle();
+
+    min-height: 42px;
+    max-height: 42px;
+
+    color: v.$BtnBgColor;
+    background-color: v.$BtnTextColor;
+
+    &:hover {
+        color: v.$BtnTextColor;
+    }
+
+    @include mx.Mobile {
+        min-height: 40px;
+        max-height: 40px;
+    }
+}

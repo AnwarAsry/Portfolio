@@ -1,6 +1,5 @@
 @use "./abstracts/variables" as v;
 @use "mixins" as mx;
-@use "Buttons" as btn;
 
 .ProjectSection{
 	display: flex;
@@ -59,8 +58,4 @@
         line-height: v.$lineHeight-x-big;
         font-weight: v.$fontWeight-N;
     }
-}
-
-.ProjectLinkBtn {
-    @include btn.LinkButton();
 }

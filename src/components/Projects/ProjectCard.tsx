@@ -1,4 +1,5 @@
 import ProjectStyles from "@styles/Projects.module.scss"
+import ButtonStyles from "@styles/Buttons.module.scss"
 import TagStyles from "@styles/Tags.module.scss"
 import { Project } from "../../models/Project";
 import { Tag } from "../Tag";
@@ -25,7 +26,7 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     </div>
                 }
             </div>
-            <a href={project.repository} target="_blank" className={ProjectStyles.ProjectLinkBtn}>Explore more</a>
+            <a href={project.repository} target="_blank" className={ButtonStyles.SecondaryBtn}>Explore more</a>
         </div>
     </>
 }
