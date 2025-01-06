@@ -1,6 +1,7 @@
 @use "./scss/abstracts/variables"as v;
 @use "./scss/abstracts/Headings" as head;
 @use "./scss/abstracts/Paragraphs" as text;
+@use "./scss/abstracts/Labels" as lab;
 @use "./scss/Buttons" as btn;
 @use "./scss/mixins" as mx;
 
@@ -67,6 +68,10 @@ a {
 
 p {
 	@include text.normalText();
+}
+
+span {
+	@include lab.Label();
 }
 
 main {
