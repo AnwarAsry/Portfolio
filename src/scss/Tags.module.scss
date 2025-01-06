@@ -1,4 +1,5 @@
 @use "./abstracts/variables" as v;
+@use "./abstracts/Labels" as labText;
 
 .TagsContainer {
     display: flex;
@@ -8,11 +9,15 @@
 
 .TagBox {
     width: fit-content;
-    height: 22px;
+    height: fit-content;
+    max-height: 24px;
     padding: v.$spacing-xx-sm v.$spacing-x-sm;
     border-radius: v.$radius-xx-sm;
+
+    @include labText.Label();
     text-transform: capitalize;
     white-space: nowrap;
+    
     color: #FFFFFF;
     background-color: #2D4553;
 }

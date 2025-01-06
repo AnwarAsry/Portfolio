@@ -2,7 +2,7 @@
 @use "../mixins" as mx;
 
 @mixin Label($weight: null) {
-    font-size: v.$fontSize-x-sm;
+    font-size: v.$fontSize-sm;
     line-height: v.$lineHeight-md;
     font-weight: v.$fontWeight-M;
     

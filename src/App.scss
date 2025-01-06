@@ -69,10 +69,6 @@ p {
 	@include text.normalText();
 }
 
-span {
-	@include lab.Label();
-}
-
 main {
 	display: flex;
 	flex-direction: column;
