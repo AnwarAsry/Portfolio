@@ -29,6 +29,10 @@ body {
   	// background-color: rgb(82, 82, 82);
   	// background-color: #bbd1d8;
 
+	@include mx.Tablet {
+		grid-template-columns: 1fr [content-start] repeat(10, 1fr) [content-end] 1fr;
+	}
+
 	@include mx.Mobile {
 		display: block;
 		padding: v.$spacing-xxx-big v.$spacing-sm;
