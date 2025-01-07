@@ -10,4 +10,5 @@ export interface Project {
     languages: string[],
     image: string,
     working: boolean,
+    done: boolean,
 }

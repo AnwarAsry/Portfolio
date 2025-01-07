@@ -3,7 +3,7 @@
 
 @mixin normalText($weight: null) {
     font-size: v.$fontSize-md;
-	line-height: v.$lineHeight-x-big;
+	line-height: v.$lineHeight-xx-big;
     
     @if $weight != null {
         font-weight: $weight;

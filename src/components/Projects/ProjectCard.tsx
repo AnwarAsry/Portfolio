@@ -20,9 +20,12 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     project.topics && <div className={TagStyles.TagsContainer}>
                         {
                             project.topics.map((tag, i) => {
-                                return <Tag text={tag} key={i} />
+                                if (i < 3) {
+                                    return <Tag text={tag} key={i} />
+                                }
                             })
                         }
+                        {project.topics.length > 3 ? `+${project.topics.length - 3}` : ""}
                     </div>
                 }
             </div>

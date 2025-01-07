@@ -3,52 +3,56 @@
         "id": 1,
         "name": "Igor",
         "description": "Igor is a Discord bot that provides detailed information on Persona 5 and Persona 5 Royal, covering characters, items, abilities, and more. Designed to make game info easily accessible, and allows users to get insights directly in Discord without needing external searches.",
-        "topics": ["discord.py", "Discord", "Python3", "MongoDB"],
+        "topics": ["Discord.py", "Discord", "Python3", "MongoDB"],
         "repository": "https://github.com/AnwarAsry/shadow-bot",
         "liveDemo": "",
         "created": "",
         "lastUpdated": "",
-        "languages": ["Python"],
+        "languages": ["Python 3"],
         "image": "../public/images/Igor.png",
-        "working": false
+        "working": false,
+        "done": false
     },
     {
         "id": 2,
         "name": "Pomodoro Sudy Technique",
         "description": "A timer application that lets users use the study techniqye called pomodoro.",
-        "topics": ["vue 3", "scss", "typescript"],
+        "topics": ["Vue 3", "SCSS", "TypeScript"],
         "repository": "https://github.com/AnwarAsry/Pomodoro-Sudy-Technique",
         "liveDemo": "",
         "created": "",
         "lastUpdated": "",
         "languages": ["Typescript", "Vue", "scss"],
         "image": "",
-        "working": false
+        "working": false,
+        "done": false
     },
     {
         "id": 3,
         "name": "Password Manager",
-        "description": "A Password Management Website that securely stores and manages login credentials, featuring Google authentication, encrypted storage, and a user-friendly dashboard.",
-        "topics": ["mongoose", "typescript", "sass", "NextJS", "MongoDB", "Google API", "NextAuthJS", "CryptoJS"],
+        "description": "A Password Management Website that securely stores and manages login credentials, featuring Google authentication and encrypted storage.",
+        "topics": ["Mongoose", "TypeScript", "SCSS", "NextJS", "MongoDB", "Google API", "NextAuthJS", "CryptoJS"],
         "repository": "https://github.com/AnwarAsry/Password-Manager",
         "liveDemo": "",
         "created": "28 November 2024",
         "lastUpdated": "1 January 2025",
         "languages": ["Typescript", "scss", "css"],
         "image": "",
-        "working": true
+        "working": true,
+        "done": false
     },
     {
         "id": 4,
         "name": "WeatherAPI",
         "description": "Weather application designed to keep you informed about the latest weather conditions anywhere in the world.",
-        "topics": ["javascript", "css", "html"],
+        "topics": ["JavaScript", "CSS", "HTML"],
         "repository": "https://github.com/AnwarAsry/Weather-API",
         "liveDemo": "",
         "created": "16 November 2023",
         "lastUpdated": "29 November 2024",
         "languages": ["javascript", "css", "html"],
         "image": "../public/images/Weather-API.png",
-        "working": false
+        "working": false,
+        "done": true
     }
 ]

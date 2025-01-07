@@ -7,7 +7,7 @@ import projects from "./projects.json"
 function App() {
 
 	const currentProjects = projects.filter(project => project.working == true)
-	const pastProjects = projects.filter(project => project.working == false)
+	const pastProjects = projects.filter(project => project.done == true)
 
 	return (
 		<>

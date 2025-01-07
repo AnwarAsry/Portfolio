@@ -3,6 +3,7 @@
 
 .TagsContainer {
     display: flex;
+    align-items: center;
     gap: v.$spacing-x-sm;
     overflow: hidden;
 }
