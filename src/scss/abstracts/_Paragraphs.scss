@@ -9,7 +9,7 @@
         font-weight: $weight;
     }
     
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-sm;
         line-height: v.$lineHeight-x-big;
     }

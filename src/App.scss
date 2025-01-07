@@ -22,20 +22,13 @@ html {
 body {
 	display: grid;
 	grid-template-rows: v.$spacing-x-lg [content-start] auto [content-end] v.$spacing-xxx-lg;
-	grid-template-columns: repeat(3, 1fr) [content-start] repeat(6, 1fr) [content-end] repeat(3, 1fr);
+	grid-template-columns: minmax(20px, 1fr) [content-start] minmax(0, 710px) [content-end] minmax(20px, 1fr);
 	gap: v.$spacing-big;
 	place-content: center;
   	background-color: #e3e9f7;
-  	// background-color: rgb(82, 82, 82);
-  	// background-color: #bbd1d8;
 
-	@include mx.Tablet {
-		grid-template-columns: 1fr [content-start] repeat(10, 1fr) [content-end] 1fr;
-	}
-
-	@include mx.Mobile {
-		display: block;
-		padding: v.$spacing-xxx-big v.$spacing-sm;
+	@include mx.MobilePortrait {
+		gap: 0;
 	}
 }
 
@@ -100,7 +93,7 @@ main {
 		gap: v.$spacing-xx-lg;
 	}
 
-	@include mx.Mobile {
+	@include mx.MobilePortrait {
 		gap: v.$spacing-x-lg;
 	}
 }

@@ -1,6 +1,6 @@
 @use "./abstracts/variables" as v;
 
-@mixin Mobile() {
+@mixin MobilePortrait() {
     @media screen and (max-width: v.$mobile) {
         @content;
     }
@@ -8,12 +8,6 @@
 
 @mixin Tablet() {
     @media screen and (max-width: v.$tablet) {
-        @content;
-    }
-}
-
-@mixin Laptop() {
-    @media screen and (max-width: v.$laptop) {
         @content;
     }
 }

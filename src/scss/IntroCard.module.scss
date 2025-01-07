@@ -10,7 +10,7 @@
     border: 2px solid v.$neutral-300;
     border-radius: 16px;
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         padding: v.$spacing-sm;
         flex-direction: column;
         gap: v.$spacing-sm;
@@ -24,7 +24,7 @@
     align-items: center;
     gap: v.$spacing-big;
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         gap: v.$spacing-sm;
 	}
 }
@@ -40,7 +40,7 @@
         height: 88px;
 	}
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         width: 76px;
         height: 76px;
 	}

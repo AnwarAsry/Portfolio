@@ -10,7 +10,7 @@
         font-weight: $weight;
     }
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-lg;
 	    line-height: v.$lineHeight-xx-lg;
         letter-spacing: - calc(v.$fontSize-lg * 0.02);
@@ -26,7 +26,7 @@
         font-weight: $weight;
     }
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-xxx-big;
 	    line-height: v.$lineHeight-x-lg;
         letter-spacing: - calc(v.$fontSize-xxx-big * 0.02);
@@ -42,7 +42,7 @@
         font-weight: $weight;
     }
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-xx-big;
 	    line-height: v.$lineHeight-lg;
         letter-spacing: 0;
@@ -58,7 +58,7 @@
         font-weight: $weight;
     }
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-big;
 	    line-height: v.$lineHeight-xx-big;
         letter-spacing: 0;

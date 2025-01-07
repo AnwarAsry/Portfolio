@@ -6,7 +6,7 @@
 	flex-direction: column;
 	gap: v.$spacing-xx-big;
 
-	@include mx.Mobile {
+	@include mx.MobilePortrait {
 		gap: v.$spacing-x-big;
 	}
 }
@@ -53,7 +53,7 @@
     word-wrap: break-word;
     text-overflow: ellipsis;
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         font-size: v.$fontSize-sm;
         line-height: v.$lineHeight-x-big;
         font-weight: v.$fontWeight-N;

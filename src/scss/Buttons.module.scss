@@ -36,7 +36,7 @@
     color: v.$BtnTextColor;
     background-color: v.$BtnBgColor;
     
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         height: 40px;
     }
 }
@@ -54,7 +54,7 @@
         color: v.$BtnTextColor;
     }
 
-    @include mx.Mobile {
+    @include mx.MobilePortrait {
         min-height: 40px;
         max-height: 40px;
     }
