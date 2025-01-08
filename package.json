@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "homepage": "https://AnwarAsry.github.io/Portfolio/",
   "private": false,
+  "homepage": "https://anwarasry.github.io/Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
