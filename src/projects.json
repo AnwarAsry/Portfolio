@@ -54,5 +54,19 @@
         "image": "../public/images/Weather-API.png",
         "working": false,
         "done": true
+    },
+    {
+        "id": 5,
+        "name": "Tic Tac Toe",
+        "description": "A simple and interactive Tic-Tac-Toe game built with Vue 3 and styled using TailwindCSS.",
+        "topics": ["TypeScript", "Tailwindcss", "Vue 3"],
+        "repository": "https://github.com/AnwarAsry/TicTacToe",
+        "liveDemo": "",
+        "created": "9 January 2025",
+        "lastUpdated": "9 January 2025",
+        "languages": ["Typescript", "Tailwindcss", "html", "vue", "css"],
+        "image": "",
+        "working": true,
+        "done": false
     }
 ]
