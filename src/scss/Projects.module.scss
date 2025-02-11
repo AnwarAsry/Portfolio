@@ -20,7 +20,7 @@
 
 .ProjectCard {
     max-width: 710px;
-    height: 210px;
+    max-height: 220px;
     display: flex;
     flex-direction: column;
     gap: v.$spacing-x-sm;
