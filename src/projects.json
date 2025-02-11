@@ -68,5 +68,33 @@
         "image": "",
         "working": false,
         "done": true
+    },
+    {
+        "id": 6,
+        "name": "SMASH-BROS",
+        "description": "The Smash Bros Combo Guide is a React app for looking up character combos. It fetches data from a Node.js & Express API and features React Router & SCSS. Built for a course to learn API integration, frontend development, and UI design.",
+        "topics": ["TypeScript", "SCSS", "React", "Client", "Vite", "Axios"],
+        "repository": "https://github.com/AnwarAsry/SMASH-BROS",
+        "liveDemo": "",
+        "created": "9 Mars 2024",
+        "lastUpdated": "11 February 2025",
+        "languages": ["Typescript", "html", "scss"],
+        "image": "",
+        "working": true,
+        "done": false
+    },
+    {
+        "id": 7,
+        "name": "SMASH-BROS Server",
+        "description": "The Smash Bros Combo API is a Node.js & Express backend that manages character combo data. It uses Sequelize with an SQL database to handle data retrieval and storage. Built for a course to learn backend development, RESTful APIs, and database management.",
+        "topics": ["TypeScript", "NodeJS", "JavaScript", "Server", "SQL", "Sequelize", "RESTful API", "Express"],
+        "repository": "https://github.com/AnwarAsry/Smash-Bros-Server",
+        "liveDemo": "",
+        "created": "9 Mars 2024",
+        "lastUpdated": "11 February 2025",
+        "languages": ["TypeScript", "JavaScript"],
+        "image": "",
+        "working": true,
+        "done": false
     }
 ]
