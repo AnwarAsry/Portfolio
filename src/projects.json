@@ -77,11 +77,11 @@
         "repository": "https://github.com/AnwarAsry/SMASH-BROS",
         "liveDemo": "",
         "created": "9 Mars 2024",
-        "lastUpdated": "11 February 2025",
+        "lastUpdated": "13 February 2025",
         "languages": ["Typescript", "html", "scss"],
         "image": "",
-        "working": true,
-        "done": false
+        "working": false,
+        "done": true
     },
     {
         "id": 7,
@@ -91,10 +91,10 @@
         "repository": "https://github.com/AnwarAsry/Smash-Bros-Server",
         "liveDemo": "",
         "created": "9 Mars 2024",
-        "lastUpdated": "11 February 2025",
+        "lastUpdated": "13 February 2025",
         "languages": ["TypeScript", "JavaScript"],
         "image": "",
-        "working": true,
-        "done": false
+        "working": false,
+        "done": true
     }
 ]
