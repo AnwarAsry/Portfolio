@@ -1,4 +1,5 @@
 import './App.scss'
+import './App.css'
 import { IntroductionCard } from './components/IntroductionCard.tsx'
 import { About } from './components/About/About'
 import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
