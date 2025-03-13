@@ -1,9 +1,11 @@
-import { ResumeButton } from "../ResumeButton"
+import { Buttons } from "@components/Buttons"
+import { HiOutlineDownload } from "react-icons/hi"
+import CV from "../../../public/AnwarCV.pdf"
 
 export const About = () => {
     return <>
-        <section className="about">
-            <div className="about__text">
+        <section className="max-w-[710px] p-4 flex flex-col items-center gap-8 rounded-xl shadow-sm bg-white">
+            <div className="flex flex-col gap-2">
                 <div>
                     <h6>About Me</h6>
                     <h4>3+ Years Programming Experience</h4>
@@ -17,7 +19,10 @@ export const About = () => {
                     or diving into my next creative side project. Let's build something amazing together! 🚀
                 </p>
             </div>
-            <ResumeButton />
+            <Buttons type="primary" link={CV}>
+                <HiOutlineDownload className="scale-[1.2]" />
+                Download CV
+            </Buttons>
         </section>
     </>
 }
