@@ -1,3 +1,4 @@
+import { Buttons } from "@components/Buttons";
 import { Project } from "../../models/Project";
 import { Tag } from "../Tag";
 
@@ -26,7 +27,9 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     </div>
                 }
             </div>
-            <a href={project.repository} target="_blank" className="min-h-10 max-h-10 px-6 flex justify-center items-center gap-2 rounded-xl text-sm/5 sm:text-base/6 font-semibold text-blue-500 transition-colors ease-in-out bg-white hover:bg-blue-500 hover:text-white hover:underline">Explore more</a>
+            <Buttons type="secondary" link={project.repository}>
+                Explore more
+            </Buttons>
         </div>
     </>
 }

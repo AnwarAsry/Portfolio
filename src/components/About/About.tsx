@@ -1,4 +1,6 @@
-import { ResumeButton } from "../ResumeButton"
+import { Buttons } from "@components/Buttons"
+import { HiOutlineDownload } from "react-icons/hi"
+import CV from "../../../public/AnwarCV.pdf"
 
 export const About = () => {
     return <>
@@ -17,7 +19,10 @@ export const About = () => {
                     or diving into my next creative side project. Let's build something amazing together! 🚀
                 </p>
             </div>
-            <ResumeButton />
+            <Buttons type="primary" link={CV}>
+                <HiOutlineDownload className="scale-[1.2]" />
+                Download CV
+            </Buttons>
         </section>
     </>
 }
