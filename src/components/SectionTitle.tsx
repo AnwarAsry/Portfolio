@@ -1,14 +1,12 @@
-import SectionTitleStyles from "@styles/Section.module.scss"
-
 interface ISectionTitle {
     title: string
 }
 
 export const SectionTitle = ({ title }: ISectionTitle) => {
     return <>
-        <div className={SectionTitleStyles.SectionTitle}>
+        <div className="flex flex-col gap-1">
             <h3>{title}</h3>
-            <hr />
+            <hr className="border-1 border-slate-300" />
         </div>
     </>
 }

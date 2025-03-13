@@ -1,50 +1,6 @@
 @use "./abstracts/variables" as v;
 @use "mixins" as mx;
 
-.ProjectSection{
-	display: flex;
-	flex-direction: column;
-	gap: v.$spacing-xx-big;
-
-	@include mx.MobilePortrait {
-		gap: v.$spacing-x-big;
-	}
-}
-
-.ProjectListWrapper {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacing-x-big;
-}
-
-.ProjectCard {
-    max-width: 710px;
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacing-x-sm;
-    overflow: hidden;
-}
-
-.ProjectDetailsContainer {
-    height: 100%;
-    padding: v.$spacing-sm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: v.$spacing-x-sm;
-    border-radius: v.$radius-sm;
-    background-color: #fff;
-}
-
-.ProjectTitleAndDescCont {
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacing-xx-sm;
-
-}
-
 .ProjectDescription {
     display: -webkit-box;
     -webkit-line-clamp: 3;

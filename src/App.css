@@ -1,1 +1,78 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+	display: grid;
+	grid-template-rows: 48px [content-start] auto [content-end] 80px;
+	grid-template-columns: minmax(20px, 1fr) [content-start] minmax(0, 710px) [content-end] minmax(20px, 1fr);
+	gap: 20px;
+	place-content: center;
+  	background-color: #e3e9f7;
+}
+#root {
+	grid-column: content;
+	grid-row: content;
+}
+h2 {
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 44px;
+	letter-spacing: - calc(2.25rem * 0.02);
+}
+h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: - calc(2rem * 0.02);
+}
+h4 {
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: - calc(1.75rem * 0.02);
+}
+h6 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: - calc(1.25rem * 0.02);
+}
+img {
+    display: block;
+}
+p {
+	font-size: 1rem;
+	line-height: 24px;
+}
+@media screen and (max-width: 600px) {
+	body {
+		gap: 0;
+	}
+	h2 {
+		font-size: 2rem;
+		line-height: 40px;
+		letter-spacing: - calc(2rem * 0.02);
+	}
+	h3 {
+		font-size: 1.75rem;
+		line-height: 36px;
+		letter-spacing: - calc(1.75rem * 0.02);
+	}
+	h4 {
+		font-size: 1.5rem;
+		line-height: 32px;
+		letter-spacing: 0;
+	}
+	h6 {
+		font-size: 1.125rem;
+		line-height: 24px;
+		letter-spacing: 0;
+	}
+	p {
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}

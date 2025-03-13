@@ -1,4 +1,3 @@
-import './App.scss'
 import './App.css'
 import { IntroductionCard } from './components/IntroductionCard.tsx'
 import { About } from './components/About/About'
@@ -12,7 +11,7 @@ function App() {
 
 	return (
 		<>
-			<main id="content">
+			<main className="flex flex-col gap-12 lg:gap-24 sm:gap-16">
 				<IntroductionCard />
 				<About />
 				<ProjectsSection title="Currently working" projects={currentProjects} />
