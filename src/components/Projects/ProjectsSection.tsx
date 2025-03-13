@@ -1,4 +1,3 @@
-import ProjectStyles from "@styles/Projects.module.scss"
 import { Project } from "@models/Project"
 import { ProjectsPresentation } from "./ProjectsPresentation"
 import { SectionTitle } from "@components/SectionTitle"
@@ -10,7 +9,7 @@ interface IProjectsSectionProps {
 
 export const ProjectsSection = ({ title, projects }: IProjectsSectionProps) => {
     return <>
-        <section className={ProjectStyles.ProjectSection}>
+        <section className="flex flex-col gap-6 sm:gap-7">
             <SectionTitle title={title} />
             <ProjectsPresentation projects={projects} />
         </section>
