@@ -21,7 +21,7 @@ export const About = () => {
             </div>
             <Buttons type="primary" link={CV}>
                 <HiOutlineDownload className="scale-[1.2]" />
-                Download CV
+                <span>Download CV</span>
             </Buttons>
         </section>
     </>
