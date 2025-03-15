@@ -5,7 +5,7 @@ html {
 }
 body {
 	display: grid;
-	grid-template-rows: 48px [content-start] auto [content-end] 80px;
+	grid-template-rows: 20px [content-start] auto [content-end] 80px;
 	grid-template-columns: minmax(20px, 1fr) [content-start] minmax(0, 710px) [content-end] minmax(20px, 1fr);
 	gap: 20px;
 	place-content: center;

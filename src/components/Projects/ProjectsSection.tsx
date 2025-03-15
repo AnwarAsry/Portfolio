@@ -1,6 +1,5 @@
 import { Project } from "@models/Project"
 import { ProjectsPresentation } from "./ProjectsPresentation"
-import { SectionTitle } from "@components/SectionTitle"
 
 interface IProjectsSectionProps {
     title: string
@@ -10,7 +9,7 @@ interface IProjectsSectionProps {
 export const ProjectsSection = ({ title, projects }: IProjectsSectionProps) => {
     return <>
         <section className="flex flex-col gap-6 sm:gap-7">
-            <SectionTitle title={title} />
+            <h3 className="">{title}</h3>
             <ProjectsPresentation projects={projects} />
         </section>
     </>
