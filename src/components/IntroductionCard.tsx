@@ -1,21 +1,41 @@
-import { IoIosMail, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { TbBrandGithubFilled, } from "react-icons/tb";
+import { RiLinkedinFill } from "react-icons/ri";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import profile from "../assets/Images/profile.jpeg";
 
 export const IntroductionCard = () => {
     return <>
-        <section className="max-w-[710px] p-3 sm:p-6 flex flex-col sm:flex-row gap-3 sm:gap-0 items-center justify-between border-2 border-slate-300 rounded-2xl ">
-            <div className="w-fit flex items-center gap-3 sm:gap-5">
-                <img src={profile} alt="Image of Developer" className="w-19 h-19 sm:w-22 sm:h-22 md:w-25 md:h-25 rounded-full object-cover" />
-
-                <div>
-                    <h2 className="mb-1">Anwar Asry</h2>
-                    <p className="font-medium text-slate-500">A <span className="font-bold">Frontend-Developer</span> <br /> based in Stockholm, Sweden.</p>
-                </div>
+        <section className="max-w-[710px]">
+            <div className="mb-5 flex justify-end gap-4">
+                <a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank">
+                    <RiLinkedinFill className="w-8 h-8" />
+                </a>
+                <a href="https://github.com/AnwarAsry" target="_blank">
+                    <TbBrandGithubFilled className="w-8 h-8" />
+                </a>
             </div>
-            <div className="flex gap-4">
-                <a href="mailto:anwarasry@icloud.com" target="_blank"><IoIosMail className="w-8 h-8" /></a>
-                <a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank"><IoLogoLinkedin className="w-8 h-8" /></a>
-                <a href="https://github.com/AnwarAsry" target="_blank"><IoLogoGithub className="w-8 h-8" /></a>
+            <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
+                <div className="p-4 md:p-14 flex flex-col gap-8 rounded-xl bg-[#f7f7f9]">
+                    <div>
+                        <span className="mb-1 flex items-center gap-2 text-md">
+                            <FaMapMarkerAlt className="text-red-500" />
+                            Stockhol, Sweden
+                        </span>
+                        <h1 className="mb-1 text-lg tracking-tight lg:text-3xl lg:tracking-tight lg:leading-[1.25] xl:text-5xl">
+                            Anwar Asry,
+                            <br />
+                            <strong>
+                                a frontend developer
+                            </strong>
+                            <br />
+                            with 3+ years of experience
+                        </h1>
+                    </div>
+                    <p className="text-lg text-slate-600">
+                        With a focus on creating clean, well-crafted interfaces that not only look great but also provide a seamless user experience.
+                    </p>
+                </div>
+                <img src={profile} alt="Image of Developer" className="h-[450px] hidden lg:block rounded-2xl object-cover" />
             </div>
         </section>
     </>
