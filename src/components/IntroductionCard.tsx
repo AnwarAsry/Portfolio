@@ -9,8 +9,8 @@ import CV from "../../public/AnwarCV.pdf"
 
 export const IntroductionCard = () => {
     return <>
-        <section className="max-w-[710px]">
-            <div className="mb-5 flex justify-end gap-4">
+        <section>
+            <div className="h-20 flex justify-end items-center gap-4">
                 <a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank">
                     <RiLinkedinFill className="w-8 h-8" />
                 </a>
@@ -18,7 +18,7 @@ export const IntroductionCard = () => {
                     <TbBrandGithubFilled className="w-8 h-8" />
                 </a>
             </div>
-            <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-x-8 lg:[grid-template-columns:1fr_26rem]">
                 <div className="p-4 md:p-14 grid content-center gap-8 rounded-xl bg-[#f7f7f9]">
                     <div>
                         <h1 className="mb-1 text-lg tracking-tight lg:text-3xl lg:tracking-tight lg:leading-[1.25] xl:text-5xl">
@@ -49,7 +49,7 @@ export const IntroductionCard = () => {
                         </Buttons>
                     </div>
                 </div>
-                <img src={profile} alt="Image of Developer" className="h-[450px] hidden lg:block rounded-2xl object-cover" />
+                <img src={profile} width={832} height={1088} alt="Image of Developer" className="h-[544px] hidden lg:block rounded-2xl object-cover" />
             </div>
         </section>
     </>

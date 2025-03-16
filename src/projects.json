@@ -9,7 +9,7 @@
         "created": "",
         "lastUpdated": "",
         "languages": ["Python 3"],
-        "image": "./public/images/Igor.png",
+        "image": "",
         "working": false,
         "done": false
     },
@@ -51,7 +51,7 @@
         "created": "16 November 2023",
         "lastUpdated": "29 November 2024",
         "languages": ["javascript", "css", "html"],
-        "image": "./public/images/Weather-API.png",
+        "image": "",
         "working": false,
         "done": true
     },
