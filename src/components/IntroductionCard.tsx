@@ -22,7 +22,7 @@ export const IntroductionCard = () => {
                 <div className="p-4 md:p-14 grid content-center gap-8 rounded-xl bg-[#f7f7f9]">
                     <div>
                         <h1 className="mb-1 text-lg tracking-tight lg:text-3xl lg:tracking-tight lg:leading-[1.25] xl:text-5xl">
-                            Anwar Asry,
+                            Hi there! I'm Anwar Asry,
                             <br />
                             <strong>
                                 a frontend developer
