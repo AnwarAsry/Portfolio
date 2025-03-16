@@ -9,7 +9,7 @@ interface IProjectCardProps {
 
 export const ProjectCard = ({ project }: IProjectCardProps) => {
     return <>
-        <div className={`grid ${project.image ? "grid-cols-single md:grid-cols-2" : "grid-cols-single"} gap-8 rounded-2xl shadow-sm bg-[#313445] overflow-hidden`}>
+        <div className={`grid ${project.image ? "grid-cols-[grid-template-columns:minmax(18rem,67rem)] md:grid-cols-2" : "grid-cols-[grid-template-columns:minmax(18rem,67rem)]"} gap-8 rounded-2xl shadow-sm bg-[#313445] overflow-hidden`}>
             <div className={`py-8 px-5 md:py-17 ${project.image ? "md:pl-14 md:pr-0" : "md:px-14"}`}>
                 {project.liveDemo && (
                     <a className="flex gap-2 items-center text-green-400 hover:underline" href={project.liveDemo} target="_blank">
