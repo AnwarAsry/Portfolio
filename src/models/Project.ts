@@ -1,15 +1,19 @@
 export interface Project {
-    id: number,
+    readonly id: number,
     name: string,
     description: string,
-    topics: string[],
-    repository: string,
-    liveDemo?: string,
-    created: string,
+    techStack: string[],
+    repo: string,
+    liveDemo: string | null,
+    readonly created: string,
     lastUpdated: string,
-    languages: string[],
     image: string,
     personal: boolean,
-    working: boolean,
-    done: boolean,
+    status: Status
+}
+
+export enum Status {
+    InProgress = "in-progress",
+    Completed = "completed",
+    Archived = "archived",
 }
