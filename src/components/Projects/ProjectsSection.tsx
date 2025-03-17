@@ -1,6 +1,5 @@
 import { Project } from "@models/Project"
-import { ProjectsPresentation } from "./ProjectsPresentation"
-import { SectionTitle } from "@components/SectionTitle"
+import { ProjectCard } from "./ProjectCard"
 
 interface IProjectsSectionProps {
     title: string
@@ -9,9 +8,15 @@ interface IProjectsSectionProps {
 
 export const ProjectsSection = ({ title, projects }: IProjectsSectionProps) => {
     return <>
-        <section className="flex flex-col gap-6 sm:gap-7">
-            <SectionTitle title={title} />
-            <ProjectsPresentation projects={projects} />
+        <section>
+            <h3 className="mb-7 text-4xl font-bold tracking-tight text-gray-800 text-center">{title}</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center">
+                {
+                    projects.map(project => {
+                        return <ProjectCard key={project.id} project={project} />
+                    })
+                }
+            </div>
         </section>
     </>
 }
