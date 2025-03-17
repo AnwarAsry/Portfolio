@@ -18,7 +18,7 @@ export const MyTechnologies = () => {
         <section className="w-full lg:w-220 mx-auto grid grid-cols-1 gap-6">
             <h3 className="text-4xl font-bold tracking-tight text-gray-800 text-center">Technologies</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <TechSkill img={reactIMG} skillName="React JS" />
+                <TechSkill img={reactIMG} skillName="React" />
                 <TechSkill img={nodejsIMG} skillName="Node JS" />
                 <TechSkill img={gitIMG} skillName="Git" />
                 <TechSkill img={tsIMG} skillName="TypeScript" />
