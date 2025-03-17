@@ -9,6 +9,7 @@ export interface Project {
     lastUpdated: string,
     languages: string[],
     image: string,
+    personal: boolean,
     working: boolean,
     done: boolean,
 }

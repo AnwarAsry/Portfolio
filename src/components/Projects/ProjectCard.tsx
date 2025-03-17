@@ -9,8 +9,11 @@ interface IProjectCardProps {
 
 export const ProjectCard = ({ project }: IProjectCardProps) => {
     return <>
-        <div className={`grid ${project.image ? "grid-cols-[grid-template-columns:minmax(18rem,67rem)] md:grid-cols-2" : "grid-cols-[grid-template-columns:minmax(18rem,67rem)]"} gap-8 rounded-2xl shadow-sm bg-[#313445] overflow-hidden`}>
-            <div className={`py-8 px-5 md:py-17 ${project.image ? "md:pl-14 md:pr-0" : "md:px-14"}`}>
+        <div className={`relative grid ${project.image ? "grid-cols-[grid-template-columns:minmax(18rem,67rem)] md:grid-cols-2" : "grid-cols-[grid-template-columns:minmax(18rem,67rem)]"} gap-8 rounded-2xl shadow-sm bg-[#313445] overflow-hidden`}>
+            {project.personal && <div className="px-3 absolute right-0 rounded-bl-lg text-white bg-sky-600">
+                Personal
+            </div>}
+            <div className={`p-5 md:py-8 ${project.image ? "md:pl-8 md:pr-0" : "md:px-8"}`}>
                 {project.liveDemo && (
                     <a className="flex gap-2 items-center text-green-400 hover:underline" href={project.liveDemo} target="_blank">
                         <span className="relative flex items-center justify-center size-3">

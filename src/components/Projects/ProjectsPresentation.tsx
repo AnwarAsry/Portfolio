@@ -8,7 +8,7 @@ interface IChildProps {
 export const ProjectsPresentation = ({ projects }: IChildProps) => {
 
     return <>
-        <div className="grid grid-cols-[grid-template-columns:minmax(18rem,67rem)] gap-8 justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center">
             {
                 projects.map(project => {
                     return <ProjectCard key={project.id} project={project} />
