@@ -3,8 +3,8 @@ import { MyTechnologies } from '@components/Technologies/MyTechnologies.tsx'
 import { IntroductionCard } from './components/IntroductionCard.tsx'
 import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
 import { Project, Status } from '@models/Project.ts'
-import { Experience } from '@models/Experience.ts'
-import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
+// import { Experience } from '@models/Experience.ts'
+// import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
 import projectsData from "./projects.json" assert {type: "json"}
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 	const currentProjects = projects.filter(project => project.status === Status.InProgress)
 	const pastProjects = projects.filter(project => project.status === Status.Completed)
 
-	const experience: Experience[] = [];
+	// const experience: Experience[] = [];
 
 	return (
 		<>
@@ -26,7 +26,7 @@ function App() {
 				<MyTechnologies />
 
 				{/* Experience */}
-				<ExperienceSection exp={experience} />
+				{/* <ExperienceSection exp={experience} /> */}
 
 				{/* Current working projects */}
 				<ProjectsSection title="Currently working" projects={currentProjects} />
