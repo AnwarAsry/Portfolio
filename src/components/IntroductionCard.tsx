@@ -2,9 +2,10 @@ import { TbBrandGithubFilled, } from "react-icons/tb";
 import { RiLinkedinFill } from "react-icons/ri";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
-import { IoMailOutline } from "react-icons/io5";
+// import { IoMailOutline } from "react-icons/io5";
 import { Buttons } from "./Buttons";
 import profile from "../assets/Images/profile.jpeg";
+import email from "../assets/icons/Email.svg";
 import CV from "../../public/AnwarCV.pdf"
 
 export const IntroductionCard = () => {
@@ -40,7 +41,8 @@ export const IntroductionCard = () => {
                     </p>
                     <div className="inline-flex flex-col md:flex-row gap-4">
                         <Buttons type="primary" link={"mailto:anwarasry@icloud.com"} style="w-fit">
-                            <IoMailOutline className="scale-[1.2]" />
+                            {/* <IoMailOutline className="scale-[1.2]" /> */}
+                            <img src={email} />
                             <span>Contact me</span>
                         </Buttons>
                         <Buttons type="secondary" link={CV} style="w-fit">
