@@ -29,7 +29,7 @@
         "id": 3,
         "name": "Password Manager",
         "description": "A Password Management Website that securely stores and manages login credentials, featuring Google authentication and encrypted storage.",
-        "techStack": ["TypeScript", "SCSS", "NextJS", "MongoDB", "Google API", "NextAuthJS"],
+        "techStack": ["TypeScript", "SCSS", "NextJS", "Prisma", "Google API", "NextAuthJS"],
         "repo": "https://github.com/AnwarAsry/Password-Manager",
         "liveDemo": "https://password-manager-three-kappa.vercel.app/",
         "created": "November 2024",
