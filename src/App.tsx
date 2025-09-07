@@ -6,6 +6,7 @@ import { Project, Status } from '@models/Project.ts'
 // import { Experience } from '@models/Experience.ts'
 // import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
 import projectsData from "./projects.json" assert {type: "json"}
+import { Container } from '@components/Container.tsx'
 
 function App() {
 
