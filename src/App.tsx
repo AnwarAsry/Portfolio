@@ -1,7 +1,7 @@
 import './App.css'
-import { MyTechnologies } from '@components/Technologies/MyTechnologies.tsx'
+// import { MyTechnologies } from '@components/Technologies/MyTechnologies.tsx'
 import { IntroductionCard } from './components/IntroductionCard.tsx'
-import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
+// import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
 import { Project, Status } from '@models/Project.ts'
 // import { Experience } from '@models/Experience.ts'
 // import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
@@ -19,22 +19,25 @@ function App() {
 
 	return (
 		<>
-			<main className="max-w-8xl mb-20 px-4 md:px-20 grid grid-cols-1 gap-20">
-				{/* Introduction with Image */}
+			<Container>
+				<IntroductionCard />
+			</Container>
+			{/* <main className="max-w-8xl mb-20 px-4 md:px-20 grid grid-cols-1 gap-20">
+				Introduction with Image
 				<IntroductionCard />
 
-				{/* My TechStack */}
+				My TechStack
 				<MyTechnologies />
 
-				{/* Experience */}
-				{/* <ExperienceSection exp={experience} /> */}
+				Experience
+				<ExperienceSection exp={experience} />
 
-				{/* Current working projects */}
+				Current working projects
 				<ProjectsSection title="Currently working" projects={currentProjects} />
 
-				{/* Past worked projects */}
+				Past worked projects
 				<ProjectsSection title="Past projects" projects={pastProjects} />
-			</main>
+			</main> */}
 		</>
 	)
 }
