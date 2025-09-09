@@ -7,6 +7,7 @@ import { Project, Status } from '@models/Project.ts'
 // import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
 import projectsData from "./projects.json" assert {type: "json"}
 import { Container } from '@components/Container.tsx'
+import { Interest } from '@components/Interest.tsx'
 
 function App() {
 
@@ -19,8 +20,11 @@ function App() {
 
 	return (
 		<>
-			<Container>
+			{/* <Container>
 				<IntroductionCard />
+			</Container> */}
+			<Container>
+				<Interest />
 			</Container>
 			{/* <main className="max-w-8xl mb-20 px-4 md:px-20 grid grid-cols-1 gap-20">
 				Introduction with Image
