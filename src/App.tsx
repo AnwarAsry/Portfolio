@@ -1,13 +1,13 @@
 import './App.css'
-// import { MyTechnologies } from '@components/Technologies/MyTechnologies.tsx'
-import { IntroductionCard } from './components/IntroductionCard.tsx'
-// import { ProjectsSection } from './components/Projects/ProjectsSection.tsx'
 import { Project, Status } from '@models/Project.ts'
-// import { Experience } from '@models/Experience.ts'
-// import { ExperienceSection } from '@components/Experience/ExperienceSection.tsx'
 import projectsData from "./projects.json" assert {type: "json"}
 import { Container } from '@components/Container.tsx'
-import { Interest } from '@components/Interest.tsx'
+import { SmallContainer } from '@components/SmallContainer.tsx'
+import sweden from '../public/icons/sweden.png'
+import { Label } from '@components/Label.tsx'
+import { IoGameControllerOutline } from 'react-icons/io5'
+import { RiPlantLine } from 'react-icons/ri'
+import { Navbar } from '@components/Navbar'
 
 function App() {
 
@@ -23,12 +23,31 @@ function App() {
 			{/* <Container>
 				<IntroductionCard />
 			</Container> */}
-			<Container>
-				<Interest />
+			{/* <Container>
+				<SmallContainer title="Interests">
+					<Label>
+						<IoGameControllerOutline className="size-7" />
+						<p>Gaming</p>
+					</Label>
+					<Label>
+						<RiPlantLine className="size-7" />
+						<p>Gardening</p>
+					</Label>
+				</SmallContainer>
 			</Container>
+			<Container>
+				<SmallContainer title="Languages">
+					<img src={sweden} alt="Swedish Flag" />
+					<img src={sweden} alt="Swedish Flag" />
+					<img src={sweden} alt="Swedish Flag" />
+				</SmallContainer>
+			</Container> */}
+
+			<header className="w-full py-6 flex justify-center">
+				<Navbar />
+			</header>
+
 			{/* <main className="max-w-8xl mb-20 px-4 md:px-20 grid grid-cols-1 gap-20">
-				Introduction with Image
-				<IntroductionCard />
 
 				My TechStack
 				<MyTechnologies />
