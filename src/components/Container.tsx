@@ -1,7 +1,12 @@
-export const Container = ({children}: {children: React.ReactNode}) => {
+interface ContainerProps {
+    children: React.ReactNode
+    style?: string
+}
+
+export const Container = ({ children, style }: ContainerProps) => {
     return (
         <div
-            className="w-fit min-h-1/3 px-6 py-8 rounded-2xl bg-[#1d1d1d] text-[#f2f3f2]"
+            className={` px-6 py-5 rounded-2xl bg-[#1d1d1d] text-[#f2f3f2] ${style ? style : ''}`}
         >
             {children}
         </div>
