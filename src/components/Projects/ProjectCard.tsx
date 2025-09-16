@@ -2,23 +2,29 @@ import { Buttons } from "@components/Buttons";
 import { Project } from "@models/Project";
 import { TagsPresentation } from "@components/Tags/TagsPresentation";
 import { FaArrowRight } from "react-icons/fa6";
+import noImage from "../../../public/images/no-image.png";
 
 interface IProjectCardProps {
     project: Project;
 }
 
 export const ProjectCard = ({ project }: IProjectCardProps) => {
-    return <>
-        <div className={`relative grid grid-cols-[grid-template-columns:minmax(18rem,67rem)] ${project.image ? "md:grid-cols-2" : ""} gap-8 rounded-2xl shadow-md bg-[#313445] overflow-hidden`}>
-            {/* Personal Tag */}
-            {project.personal && (
-                <span className="px-4 py-0.5 absolute right-0 rounded-bl-lg text-sm sm:text-base text-white bg-sky-600">
-                    Personal
-                </span>
-            )}
+    return (
+        <div className="w-fit h-80 flex gap-4">
+            <img
+                className="w-100 object-cover hidden rounded-2xl md:block"
+                src={project.image ? project.image : noImage}
+                alt={project.name || "Project preview"}
+                loading="lazy"
+            />
+            <div className={`w-xl p-5 relative gap-8 rounded-2xl shadow-md bg-[#1d1d1d] overflow-hidden`}>
+                {/* Personal Tag */}
+                {project.personal && (
+                    <span className="px-4 py-0.5 absolute top-0 right-0 rounded-bl-lg text-sm sm:text-base text-white bg-sky-600">
+                        Personal
+                    </span>
+                )}
 
-            {/* Project Details */}
-            <div className={`p-5 md:py-8 ${project.image ? "md:pl-8 md:pr-0" : "md:px-8"}`}>
                 {/* Live Demo Link */}
                 {project.liveDemo && (
                     <a
@@ -54,21 +60,11 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                 </p>
 
                 {/* Button to Repo */}
-                <Buttons style="mt-8" type="secondary" link={project.repo}>
+                <Buttons style="mt-8 absolute bottom-5" type="secondary" link={project.repo}>
                     <span>View Repo</span>
                     <FaArrowRight />
                 </Buttons>
             </div>
-
-            {/* Project Image */}
-            {project.image && (
-                <img
-                    className="hidden md:block"
-                    src={project.image}
-                    alt={project.name || "Project preview"}
-                    loading="lazy"
-                />
-            )}
         </div>
-    </>
+    )
 }
