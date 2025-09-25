@@ -18,13 +18,13 @@ export const Navbar = () => {
                         ].join(" ")
                     }
                 ><li className="px-2 py-2">Projects</li></NavLink>
-                <NavLink to="/contact"
+                <NavLink to="/experience"
                     className={({ isActive }) =>
                         [
                             isActive ? "rounded-lg text-[#f2f3f2] bg-[#3f3e45]" : "",
                         ].join(" ")
                     }
-                ><li className="px-2 py-2">Contact</li></NavLink>
+                ><li className="px-2 py-2">Experience</li></NavLink>
             </ul>
         </nav>
     )

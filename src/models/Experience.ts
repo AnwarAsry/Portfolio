@@ -3,5 +3,11 @@ export interface Experience {
     duration: string
     position: string
     responsibilities: string[]
-    technologies: string[]
+}
+
+export interface Education {
+    institution: string
+    duration: string
+    degree: string
+    details: string[]
 }

@@ -6,7 +6,7 @@ export const Layout = () => {
         <header className="w-full py-6 flex justify-center">
             <Navbar />
         </header>
-        <main>
+        <main className="mt-5">
             <Outlet />
         </main>
     </>;

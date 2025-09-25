@@ -11,12 +11,15 @@ interface IProjectCardProps {
 export const ProjectCard = ({ project }: IProjectCardProps) => {
     return (
         <div className="w-fit h-80 flex gap-4">
-            <img
-                className="w-100 object-cover hidden rounded-2xl md:block"
-                src={project.image ? project.image : noImage}
-                alt={project.name || "Project preview"}
-                loading="lazy"
-            />
+            {project.image && (
+                <img
+                    className="w-100 object-cover hidden rounded-2xl md:block"
+                    src={project.image ? project.image : noImage}
+                    alt={project.name || "Project preview"}
+                    loading="lazy"
+                />
+            )}
+
             <div className={`w-xl p-5 relative gap-8 rounded-2xl shadow-md bg-[#1d1d1d] overflow-hidden`}>
                 {/* Personal Tag */}
                 {project.personal && (
