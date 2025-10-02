@@ -3,71 +3,99 @@ import { Project } from "@models/Project";
 import { TagsPresentation } from "@components/Tags/TagsPresentation";
 import { FaArrowRight } from "react-icons/fa6";
 import noImage from "../../../public/images/no-image.png";
+import { Container } from "@components/Container";
 
 interface IProjectCardProps {
     project: Project;
 }
 
 export const ProjectCard = ({ project }: IProjectCardProps) => {
+    // return (
+    //     <div className="w-fit h-80 flex gap-4">
+    //         {project.image && (
+    //             <img
+    //                 className="w-100 object-cover hidden rounded-2xl md:block"
+    //                 src={project.image ? project.image : noImage}
+    //                 alt={project.name || "Project preview"}
+    //                 loading="lazy"
+    //             />
+    //         )}
+
+    //         <div className={`w-xl p-5 relative gap-8 rounded-2xl shadow-md bg-[#1d1d1d] overflow-hidden`}>
+    //             {/* Personal Tag */}
+    //             {project.personal && (
+    //                 <span className="px-4 py-0.5 absolute top-0 right-0 rounded-bl-lg text-sm sm:text-base text-white bg-sky-600">
+    //                     Personal
+    //                 </span>
+    //             )}
+
+    //             {/* Live Demo Link */}
+    //             {project.liveDemo && (
+    //                 <a
+    //                     className="flex gap-2 items-center text-green-400 hover:underline"
+    //                     href={project.liveDemo}
+    //                     target="_blank"
+    //                     rel="noopener noreferrer"
+    //                 >
+    //                     <span className="relative flex items-center justify-center size-3">
+    //                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-300 opacity-75"></span>
+    //                         <span className="relative inline-flex size-2 rounded-full bg-green-400"></span>
+    //                     </span>
+    //                     Live Demo
+    //                 </a>
+    //             )}
+
+    //             {/* Project Title */}
+    //             <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-white">
+    //                 {project.name}
+    //             </h3>
+
+    //             {/* Project Dates */}
+    //             <span className="mb-5 block text-base font-normal text-white">
+    //                 {project.created} - {project.lastUpdated}
+    //             </span>
+
+    //             {/* Topics (Tags) */}
+    //             {project.techStack && <TagsPresentation topics={project.techStack} />}
+
+    //             {/* Project Description */}
+    //             <p className="text-base sm:text-lg text-[#d0d5dd]">
+    //                 {project.description || "No description available"}
+    //             </p>
+
+    //             {/* Button to Repo */}
+    //             <Buttons style="mt-8 absolute bottom-5" type="secondary" link={project.repo}>
+    //                 <span>View Repo</span>
+    //                 <FaArrowRight />
+    //             </Buttons>
+    //         </div>
+    //     </div>
+    // )
     return (
-        <div className="w-fit h-80 flex gap-4">
-            {project.image && (
-                <img
-                    className="w-100 object-cover hidden rounded-2xl md:block"
-                    src={project.image ? project.image : noImage}
-                    alt={project.name || "Project preview"}
-                    loading="lazy"
-                />
-            )}
-
-            <div className={`w-xl p-5 relative gap-8 rounded-2xl shadow-md bg-[#1d1d1d] overflow-hidden`}>
-                {/* Personal Tag */}
-                {project.personal && (
-                    <span className="px-4 py-0.5 absolute top-0 right-0 rounded-bl-lg text-sm sm:text-base text-white bg-sky-600">
-                        Personal
-                    </span>
-                )}
-
-                {/* Live Demo Link */}
-                {project.liveDemo && (
-                    <a
-                        className="flex gap-2 items-center text-green-400 hover:underline"
-                        href={project.liveDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span className="relative flex items-center justify-center size-3">
-                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-300 opacity-75"></span>
-                            <span className="relative inline-flex size-2 rounded-full bg-green-400"></span>
-                        </span>
-                        Live Demo
-                    </a>
-                )}
-
+        <div>
+            <Container style="w-xl overflow-hidden">
                 {/* Project Title */}
-                <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-white">
+                <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-[#f2f3f2]">
                     {project.name}
                 </h3>
 
                 {/* Project Dates */}
-                <span className="mb-5 block text-base font-normal text-white">
+                <span className="mb-5 block text-base font-normal text-[#f2f3f2]">
                     {project.created} - {project.lastUpdated}
                 </span>
 
-                {/* Topics (Tags) */}
-                {project.techStack && <TagsPresentation topics={project.techStack} />}
-
                 {/* Project Description */}
-                <p className="text-base sm:text-lg text-[#d0d5dd]">
+                <p className="text-base sm:text-lg text-[#f2f3f2]">
                     {project.description || "No description available"}
                 </p>
 
-                {/* Button to Repo */}
-                <Buttons style="mt-8 absolute bottom-5" type="secondary" link={project.repo}>
-                    <span>View Repo</span>
-                    <FaArrowRight />
-                </Buttons>
-            </div>
+                {/* Topics (Tags) */}
+                {project.techStack && <TagsPresentation topics={project.techStack} />}
+            </Container>
+
+            <a className="w-full mt-4 px-6 py-5 flex items-center justify-between rounded-2xl bg-[#1d1d1d] text-[#f2f3f2] hover:bg-[#2d2d2d]" href={project.repo} target="_blank" rel="noopener noreferrer">
+                View repo <FaArrowRight />
+            </a>
         </div>
     )
 }

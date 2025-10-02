@@ -1,6 +1,5 @@
 import { ProjectsSection } from "@components/Projects/ProjectsSection";
 import { Project, Status } from "@models/Project";
-// import projectsData from "./projects.json" assert { type: "json" };
 import projects from "@projects" assert { type: "json" };
 
 export const Projects = () => {

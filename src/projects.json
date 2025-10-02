@@ -47,7 +47,7 @@
         "liveDemo": "",
         "created": "November 2023",
         "lastUpdated": "November 2024",
-        "image": "",
+        "image": "../public/images/Weather-API.png",
         "personal": true,
         "status": "completed"
     },
@@ -89,5 +89,18 @@
         "image": "",
         "personal": true,
         "status": "archived"
+    },
+    {
+        "id": 8,
+        "name": "Webshop Administration",
+        "description": "My first Java project, built for a course assignment, showcasing my understanding of Java and OOP concepts at the time.",
+        "techStack": ["Java", "Jackson", "JOptionPane"],
+        "repo": "https://github.com/AnwarAsry/webshop-admin.git",
+        "liveDemo": "",
+        "created": "September 2025",
+        "lastUpdated": "Oktober 2025",
+        "image": "",
+        "personal": true,
+        "status": "completed"
     }
 ]
