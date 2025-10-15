@@ -8,7 +8,6 @@ export interface Project {
     readonly created: string,
     lastUpdated: string,
     image: string,
-    personal: boolean,
     status: Status
 }
 

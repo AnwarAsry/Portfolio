@@ -9,7 +9,6 @@
         "created": "",
         "lastUpdated": "",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -22,7 +21,6 @@
         "created": "",
         "lastUpdated": "",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -35,8 +33,7 @@
         "created": "November 2024",
         "lastUpdated": "March 2025",
         "image": "",
-        "personal": true,
-        "status": "in-progress"
+        "status": "completed"
     },
     {
         "id": 4,
@@ -48,7 +45,6 @@
         "created": "November 2023",
         "lastUpdated": "November 2024",
         "image": "../public/images/Weather-API.png",
-        "personal": true,
         "status": "completed"
     },
     {
@@ -61,7 +57,6 @@
         "created": "January 2025",
         "lastUpdated": "January 2025",
         "image": "",
-        "personal": true,
         "status": "completed"
     },
     {
@@ -74,7 +69,6 @@
         "created": "Mars 2024",
         "lastUpdated": "February 2025",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -87,7 +81,6 @@
         "created": "Mars 2024",
         "lastUpdated": "February 2025",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -100,7 +93,18 @@
         "created": "September 2025",
         "lastUpdated": "Oktober 2025",
         "image": "",
-        "personal": true,
         "status": "completed"
+    },
+    {
+        "id": 9,
+        "name": "RecipeHub",
+        "description": "A website to save all my recipes using supabase for also file storages (video and images).",
+        "techStack": ["React", "react-router", "supabase"],
+        "repo": "https://github.com/AnwarAsry/RecipeSite.git",
+        "liveDemo": "",
+        "created": "August 2025",
+        "lastUpdated": "",
+        "image": "",
+        "status": "in-progress"
     }
 ]

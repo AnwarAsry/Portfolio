@@ -10,15 +10,18 @@ import gitIMG from "@assets/icons/git-icon.svg";
 import tsIMG from "@assets/icons/ts-logo-512.svg";
 import cssIMG from "@assets/icons/css-3.svg";
 import htmlIMG from "@assets/icons/html-1.svg";
-import mongodbIMG from "@assets/icons/mongodb-icon-2.svg";
+import mongodbIMG from "@assets/icons/mongodb.svg";
 import sqlIMG from "@assets/icons/mysql-logo-pure.svg";
-import nextIMG from "@assets/icons/next-js.svg";
+import nextIMG from "@assets/icons/nextjs.svg";
 import tailwindIMG from "@assets/icons/tailwind-css-2.svg";
 import viteIMG from "@assets/icons/vitejs.svg";
-import profile from "@assets/Images/profile.jpeg";
-import plantIMG from "@assets/Images/kinakal.jpeg";
+import javaIMG from "@assets/icons/java.svg";
+import profile from "@assets/Images/dev.jpeg";
 
-import sweden from "../public/icons/sweden.png";
+import linkedin from "@assets/icons/linkedin.svg";
+
+import swedish from "@assets/icons/swedish.svg";
+import english from "@assets/icons/english.svg";
 
 import { IoGameControllerOutline } from "react-icons/io5";
 import { RiPlantLine } from "react-icons/ri";
@@ -33,13 +36,13 @@ function App() {
 	return <>
 		<section className="w-3/4 h-fit mx-auto mb-20 grid gap-[14px]">
 			<img
-				className="w-130 h-60 rounded-2xl object-cover col-start-2 row-start-3"
+				className="w-100 h-80 rounded-2xl object-cover col-start-1 col-end-2 row-start-1 row-end-3"
 				src={profile}
 				alt="Picture of developer"
 			/>
 
 			{/* Introduction card */}
-			<Container style="col-span-2 row-span-2 col-start-1 row-start-1">
+			<Container style="col-start-2 col-end-4 row-start-1 row-end-2">
 				<span className="uppercase font-bold text-sm text-[#7f7f7f]">
 					A Frontend Developer
 				</span>
@@ -56,41 +59,15 @@ function App() {
 				</div>
 			</Container>
 
-			{/* TechStack */}
-			<Container style="row-span-3 col-start-1 row-start-3">
-				<h2 className="text-2xl font-bold">TechStack</h2>
-				<div className="w-full mt-3 flex flex-wrap gap-4">
-					<TechSkill img={reactIMG} main />
-					<TechSkill img={nodejsIMG} />
-					<TechSkill img={gitIMG} />
-					<TechSkill img={tsIMG} />
-					<TechSkill img={cssIMG} />
-					<TechSkill img={htmlIMG} />
-					<TechSkill img={mongodbIMG} />
-					<TechSkill img={sqlIMG} />
-					<TechSkill img={nextIMG} />
-					<TechSkill img={tailwindIMG} />
-					<TechSkill img={viteIMG} />
-				</div>
-			</Container>
-
 			{/* Quote */}
-			<Container style="col-start-3 row-start-1 bg-blue-500">
-				<p className="text-2xl font-bold">
+			<Container style="col-start-2 col-end-4 row-start-2 row-end-3 bg-blue-500">
+				<p className="h-full flex items-center justify-center text-2xl font-bold">
 					“Age adds years, but only mistakes add wisdom.”
 				</p>
 			</Container>
 
-			{/* Plant Image */}
-			<div className="bg-red-300 row-span-2 col-start-3 row-start-2">
-				{/* <img className="w-full h-100 rounded-2xl object-cover row-span-2 col-start-3 row-start-2"
-					src={plantIMG}
-					alt="dj"
-				/> */}
-			</div>
-
 			{/* Interests */}
-			<Container style="col-span-2 col-start-2 row-start-4">
+			<Container style="col-start-1 col-end-3 row-start-3 row-end-4">
 				<SmallContainer title="Interests">
 					<Label>
 						<IoGameControllerOutline className="size-7" />
@@ -104,14 +81,34 @@ function App() {
 			</Container>
 
 			{/* Languages */}
-			<Container style="col-span-2 col-start-2 row-start-5">
+			<Container style="col-start-1 col-end-3 row-start-4 row-end-5">
 				<SmallContainer title="Languages">
-					<img src={sweden} alt="Swedish Flag" />
-					<img src={sweden} alt="Swedish Flag" />
-					<img src={sweden} alt="Swedish Flag" />
+					<img className="w-10" src={swedish} alt="Swedish Flag" />
+					<img className="w-10" src={english} alt="English Flag" />
 				</SmallContainer>
 			</Container>
-			<Container style="col-span-3">
+
+			{/* TechStack */}
+			<Container style="col-start-3 col-end-4 row-start-3 row-end-5">
+				<h2 className="text-2xl font-bold">TechStack</h2>
+				<div className="w-full mt-3 grid grid-cols-5 gap-3">
+					<TechSkill img={reactIMG} main tooltipText="React" />
+					<TechSkill img={nodejsIMG} tooltipText="Node.js" />
+					<TechSkill img={gitIMG} tooltipText="Git" />
+					<TechSkill img={tsIMG} tooltipText="TypeScript" />
+					<TechSkill img={cssIMG} tooltipText="CSS" />
+					<TechSkill img={htmlIMG} tooltipText="HTML" />
+					<TechSkill img={mongodbIMG} tooltipText="MongoDB" />
+					<TechSkill img={sqlIMG} tooltipText="SQL" />
+					<TechSkill img={nextIMG} tooltipText="Next.js" />
+					<TechSkill img={tailwindIMG} tooltipText="Tailwind CSS" />
+					<TechSkill img={viteIMG} tooltipText="Vite" />
+					<TechSkill img={javaIMG} tooltipText="Java" />
+				</div>
+			</Container>
+
+			{/* Contact */}
+			<Container style="col-start-1 col-end-4 row-start-5 row-end-6">
 				<SmallContainer title="Contact">
 					<a href="mailto:anwarasry@icloud.com">
 						<Label>
@@ -121,7 +118,8 @@ function App() {
 					</a>
 					<a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank">
 						<Label>
-							<LiaLinkedin className="size-7" />
+							<img className="size-7" src={linkedin} alt="LinkedIn Logo" />
+							{/* <LiaLinkedin className="size-7" /> */}
 						</Label>
 					</a>
 					<a href="https://github.com/anwarasry" target="_blank">

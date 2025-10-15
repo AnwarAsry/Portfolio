@@ -44,7 +44,7 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
 
                     {/* Project Dates */}
                     <span className="mb-3 block text-base font-normal text-[#f2f3f2]">
-                        {project.created} - {project.lastUpdated}
+                        {project.created} - {project.lastUpdated ? project.lastUpdated : "Present"}
                     </span>
 
                     {/* Project Description */}
