@@ -1,0 +1,7 @@
+extend: {
+    colors: {
+        muted: {
+
+        }
+    }
+}

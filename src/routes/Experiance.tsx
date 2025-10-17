@@ -8,7 +8,7 @@ export const Experiance = () => {
     const work: IExperience[] = listExperince.filter(exp => exp.type === "work") as IExperience[];
 
     return (
-        <div className="w-fit mx-auto px-5 grid grid-cols-2 grid-cols-[minmax(500px, 1fr)] gap-16">
+        <div className="w-fit mx-auto grid grid-cols-1 md:grid-cols-2 grid-cols-[minmax(500px, 1fr)] gap-16">
             <div>
                 <h3 className="mb-12 text-3xl font-bold tracking-tight text-center text-[#f2f3f2]">
                     My Education

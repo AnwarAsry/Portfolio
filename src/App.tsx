@@ -26,23 +26,39 @@ import english from "@assets/icons/english.svg";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { RiPlantLine } from "react-icons/ri";
 import { HiOutlineMail } from "react-icons/hi";
-import { LiaLinkedin } from "react-icons/lia";
 import { FiGithub } from "react-icons/fi";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { PiArrowFatLinesRightFill } from "react-icons/pi";
 
+const techStack = [
+	{ img: reactIMG, tooltipText: "React", main: true },
+	{ img: nodejsIMG, tooltipText: "Node.js" },
+	{ img: gitIMG, tooltipText: "Git" },
+	{ img: tsIMG, tooltipText: "TypeScript" },
+	{ img: cssIMG, tooltipText: "CSS" },
+	{ img: htmlIMG, tooltipText: "HTML" },
+	{ img: mongodbIMG, tooltipText: "MongoDB" },
+	{ img: sqlIMG, tooltipText: "SQL" },
+	{ img: nextIMG, tooltipText: "Next.js" },
+	{ img: tailwindIMG, tooltipText: "Tailwind CSS" },
+	{ img: viteIMG, tooltipText: "Vite" },
+	{ img: javaIMG, tooltipText: "Java" },
+]
+
 
 function App() {
 	return <>
-		<section className="w-3/4 h-fit mx-auto mb-20 grid gap-[14px]">
-			<img
-				className="w-100 h-80 rounded-2xl object-cover col-start-1 col-end-2 row-start-1 row-end-3"
-				src={profile}
-				alt="Picture of developer"
-			/>
+		<section className="max-w-6xl h-fit mx-auto grid gap-[14px]">
+			<div className="w-20 md:w-50 lg:w-100 h-20 md:h-40 lg:h-80 col-start-1 col-end-2 row-start-1 row-end-3">
+				<img
+					className="w-full h-full rounded-full md:rounded-2xl object-cover"
+					src={profile}
+					alt="Portrait of Anwar Asry, frontend developer"
+				/>
+			</div>
 
 			{/* Introduction card */}
-			<Container style="col-start-2 col-end-4 row-start-1 row-end-2">
+			<Container className="col-start-2 col-end-4">
 				<span className="uppercase font-bold text-sm text-[#7f7f7f]">
 					A Frontend Developer
 				</span>
@@ -52,7 +68,7 @@ function App() {
 					Stockholm, Sweden
 				</span>
 				<p className="text-lg text-[#8d8c8d]">
-					I’m always looking to learn more and grow as a developer.
+					I’m a curious frontend developer who loves learning new things and improving my skills. Currently I'm studying to become a Java developer.
 				</p>
 				<div className="w-full flex justify-end">
 					<PiArrowFatLinesRightFill className="size-6 text-[#8d8c8d]" />
@@ -60,14 +76,14 @@ function App() {
 			</Container>
 
 			{/* Quote */}
-			<Container style="col-start-2 col-end-4 row-start-2 row-end-3 bg-blue-500">
+			<Container className="col-start-1 lg:col-start-2 col-end-4 row-start-2 bg-blue-500">
 				<p className="h-full flex items-center justify-center text-2xl font-bold">
 					“Age adds years, but only mistakes add wisdom.”
 				</p>
 			</Container>
 
 			{/* Interests */}
-			<Container style="col-start-1 col-end-3 row-start-3 row-end-4">
+			<Container className="col-start-1 col-end-3 row-start-3">
 				<SmallContainer title="Interests">
 					<Label>
 						<IoGameControllerOutline className="size-7" />
@@ -81,7 +97,7 @@ function App() {
 			</Container>
 
 			{/* Languages */}
-			<Container style="col-start-1 col-end-3 row-start-4 row-end-5">
+			<Container className="col-start-1 col-end-3 row-start-4">
 				<SmallContainer title="Languages">
 					<img className="w-10" src={swedish} alt="Swedish Flag" />
 					<img className="w-10" src={english} alt="English Flag" />
@@ -89,26 +105,17 @@ function App() {
 			</Container>
 
 			{/* TechStack */}
-			<Container style="col-start-3 col-end-4 row-start-3 row-end-5">
+			<Container className="col-start-1 lg:col-start-3 row-start-5 lg:row-start-3 row-end-5">
 				<h2 className="text-2xl font-bold">TechStack</h2>
 				<div className="w-full mt-3 grid grid-cols-5 gap-3">
-					<TechSkill img={reactIMG} main tooltipText="React" />
-					<TechSkill img={nodejsIMG} tooltipText="Node.js" />
-					<TechSkill img={gitIMG} tooltipText="Git" />
-					<TechSkill img={tsIMG} tooltipText="TypeScript" />
-					<TechSkill img={cssIMG} tooltipText="CSS" />
-					<TechSkill img={htmlIMG} tooltipText="HTML" />
-					<TechSkill img={mongodbIMG} tooltipText="MongoDB" />
-					<TechSkill img={sqlIMG} tooltipText="SQL" />
-					<TechSkill img={nextIMG} tooltipText="Next.js" />
-					<TechSkill img={tailwindIMG} tooltipText="Tailwind CSS" />
-					<TechSkill img={viteIMG} tooltipText="Vite" />
-					<TechSkill img={javaIMG} tooltipText="Java" />
+					{techStack.map((tech, index) => (
+						<TechSkill key={index} {...tech} />
+					))}
 				</div>
 			</Container>
 
 			{/* Contact */}
-			<Container style="col-start-1 col-end-4 row-start-5 row-end-6">
+			<Container className="col-start-1 col-end-4 row-start-6 lg:row-start-5">
 				<SmallContainer title="Contact">
 					<a href="mailto:anwarasry@icloud.com">
 						<Label>
@@ -116,15 +123,17 @@ function App() {
 							anwarasry@icloud.com
 						</Label>
 					</a>
-					<a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank">
+					<a href="https://www.linkedin.com/in/anwar-asry-b1ba6521a" target="_blank" aria-label="Linkedin profile">
 						<Label>
 							<img className="size-7" src={linkedin} alt="LinkedIn Logo" />
 							{/* <LiaLinkedin className="size-7" /> */}
+							LinkedIn
 						</Label>
 					</a>
-					<a href="https://github.com/anwarasry" target="_blank">
+					<a href="https://github.com/anwarasry" target="_blank" aria-label="GitHub profile">
 						<Label>
 							<FiGithub className="size-7" />
+							Github
 						</Label>
 					</a>
 				</SmallContainer>

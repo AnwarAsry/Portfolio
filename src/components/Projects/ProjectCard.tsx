@@ -10,17 +10,17 @@ interface IProjectCardProps {
 
 export const ProjectCard = ({ project }: IProjectCardProps) => {
     return (
-        <div className="w-fit h-fit max-h-80 flex gap-4">
+        <div className="w-fit h-fit lg:max-h-80 flex gap-4">
             {project.image && (
                 <img
-                    className="w-100 object-cover hidden rounded-2xl md:block"
+                    className="w-100 object-cover hidden rounded-2xl lg:block"
                     src={project.image ? project.image : noImage}
                     alt={project.name || "Project preview"}
                     loading="lazy"
                 />
             )}
             <div className="flex flex-col gap-4">
-                <Container style="w-xl flex-2 overflow-hidden">
+                <Container className="max-w-xl flex-2 overflow-hidden">
                     {/* Live Demo Link */}
                     {project.liveDemo && (
                         <a
