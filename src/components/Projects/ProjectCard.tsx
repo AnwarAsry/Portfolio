@@ -48,7 +48,7 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     </span>
 
                     {/* Project Description */}
-                    <p className="text-base text-gray-400">
+                    <p className="text-lg text-gray-400">
                         {project.description || "No description available"}
                     </p>
 

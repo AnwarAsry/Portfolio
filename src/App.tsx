@@ -49,7 +49,7 @@ const techStack = [
 
 function App() {
 	return <>
-		<section className="max-w-6xl h-fit mx-auto grid 
+		<section className="max-w-4xl h-fit mx-auto grid 
 			grid-cols-1
 			md:grid-cols-[auto_1fr_1fr]
 			gap-3.5"
@@ -72,14 +72,14 @@ function App() {
 						<span className="uppercase font-bold">
 							Frontend Developer
 						</span>
-						<span>*</span>
+						<span>•</span>
 						<span className="flex items-center gap-2">
 							<FaMapMarkerAlt className="text-red-500" />
 							Stockholm, Sweden
 						</span>
 					</p>
 					<h1 className="my-2 text-4xl font-bold">Anwar Asry</h1>
-					<p className="text-lg text-gray-400">
+					<p className="text-xl text-gray-400">
 						I’m a curious frontend developer who loves learning new things and improving my skills. Currently I'm studying to become a Java developer.
 					</p>
 					<div className="w-full flex justify-end">
