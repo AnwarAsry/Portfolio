@@ -38,17 +38,17 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     )}
 
                     {/* Project Title */}
-                    <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-[#f2f3f2]">
+                    <h3 className="mt-1 mb-0.5 font-bold text-xl sm:text-3xl text-headingColor">
                         {project.name}
                     </h3>
 
                     {/* Project Dates */}
-                    <span className="mb-3 block text-base font-normal text-[#f2f3f2]">
+                    <span className="mb-3 block text-base font-normal text-gray-400">
                         {project.created} - {project.lastUpdated ? project.lastUpdated : "Present"}
                     </span>
 
                     {/* Project Description */}
-                    <p className="text-base text-[#f2f3f2]">
+                    <p className="text-base text-gray-400">
                         {project.description || "No description available"}
                     </p>
 
@@ -56,7 +56,7 @@ export const ProjectCard = ({ project }: IProjectCardProps) => {
                     {project.techStack && <TagsPresentation topics={project.techStack} />}
                 </Container>
 
-                <a className="w-full  px-6 py-5 flex items-center justify-between rounded-2xl bg-[#1d1d1d] text-[#f2f3f2] hover:bg-[#2d2d2d]" href={project.repo} target="_blank" rel="noopener noreferrer">
+                <a className="w-full px-6 py-5 flex items-center justify-between rounded-xl bg-container text-headingColor hover:bg-hoverContainerbg" href={project.repo} target="_blank" rel="noopener noreferrer">
                     View repo <FaArrowRight />
                 </a>
             </div>

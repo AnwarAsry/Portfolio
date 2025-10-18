@@ -6,7 +6,7 @@ interface ContainerProps {
 export const Container = ({ children, className }: ContainerProps) => {
     return (
         <div
-            className={`px-6 py-5 relative rounded-2xl bg-[#1d1d1d] text-[#f2f3f2] ${className ? className : ''}`}
+            className={`px-6 py-4 relative rounded-xl bg-container text-headingColor ${className ? className : ''}`}
         >
             {children}
         </div>

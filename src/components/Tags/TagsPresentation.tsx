@@ -14,7 +14,7 @@ export const TagsPresentation = ({ topics }: ITagsPresentationProps) => {
                     }
                 })
             }
-            {topics.length > 3 ? <span className="text-white">+{topics.length - 3}</span> : ""}
+            {topics.length > 3 ? <span className="text-labelWhite">+{topics.length - 3}</span> : ""}
         </div>
     </>
 }
