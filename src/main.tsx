@@ -30,11 +30,10 @@ const router = createBrowserRouter(
 					element: <About />,
 				},
 			],
-
 		},
 	],
 	{
-		basename: "/portfolio"
+		basename: "/portfolio",
 	}
 );
 
