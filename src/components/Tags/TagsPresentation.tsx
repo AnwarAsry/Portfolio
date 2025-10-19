@@ -6,7 +6,7 @@ interface ITagsPresentationProps {
 
 export const TagsPresentation = ({ topics }: ITagsPresentationProps) => {
     return <>
-        <div className="mt-2 mb-5 flex items-center gap-2">
+        <div className="mt-5 flex items-center gap-2">
             {
                 topics.map((tag, i) => {
                     if (i < 3) {
@@ -14,7 +14,7 @@ export const TagsPresentation = ({ topics }: ITagsPresentationProps) => {
                     }
                 })
             }
-            {topics.length > 3 ? <span className="text-white">+{topics.length - 3}</span> : ""}
+            {topics.length > 3 ? <span className="text-labelWhite">+{topics.length - 3}</span> : ""}
         </div>
     </>
 }

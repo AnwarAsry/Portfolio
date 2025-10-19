@@ -9,7 +9,6 @@
         "created": "",
         "lastUpdated": "",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -22,7 +21,6 @@
         "created": "",
         "lastUpdated": "",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -35,8 +33,7 @@
         "created": "November 2024",
         "lastUpdated": "May 2025",
         "image": "",
-        "personal": true,
-        "status": "in-progress"
+        "status": "completed"
     },
     {
         "id": 4,
@@ -47,8 +44,7 @@
         "liveDemo": "",
         "created": "November 2023",
         "lastUpdated": "November 2024",
-        "image": "",
-        "personal": true,
+        "image": "../public/images/Weather-API.png",
         "status": "completed"
     },
     {
@@ -61,7 +57,6 @@
         "created": "January 2025",
         "lastUpdated": "January 2025",
         "image": "",
-        "personal": true,
         "status": "completed"
     },
     {
@@ -74,7 +69,6 @@
         "created": "Mars 2024",
         "lastUpdated": "February 2025",
         "image": "",
-        "personal": true,
         "status": "archived"
     },
     {
@@ -87,7 +81,30 @@
         "created": "Mars 2024",
         "lastUpdated": "February 2025",
         "image": "",
-        "personal": true,
         "status": "archived"
+    },
+    {
+        "id": 8,
+        "name": "Webshop Administration",
+        "description": "My first Java project, built for a course assignment, showcasing my understanding of Java and OOP concepts at the time.",
+        "techStack": ["Java", "Jackson", "JOptionPane"],
+        "repo": "https://github.com/AnwarAsry/webshop-admin.git",
+        "liveDemo": "",
+        "created": "September 2025",
+        "lastUpdated": "Oktober 2025",
+        "image": "",
+        "status": "completed"
+    },
+    {
+        "id": 9,
+        "name": "RecipeHub",
+        "description": "A website to save all my recipes using supabase for also file storages (video and images).",
+        "techStack": ["React", "react-router", "supabase"],
+        "repo": "https://github.com/AnwarAsry/RecipeSite.git",
+        "liveDemo": "",
+        "created": "August 2025",
+        "lastUpdated": "",
+        "image": "",
+        "status": "in-progress"
     }
 ]

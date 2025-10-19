@@ -1,7 +1,7 @@
-export interface Experience {
-    company: string
+export interface IExperience {
+    title: string
+    place: string
     duration: string
-    position: string
-    responsibilities: string[]
-    technologies: string[]
+    description: string
+    type: "education" | "work";
 }

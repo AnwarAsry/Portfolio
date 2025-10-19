@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Frontend Developer",
+        "place": "Medieinstitutet",
+        "duration": "2023 - 2025",
+        "description": "Developed various projects using React and Vue, Collaborated in teams for software development courses",
+        "type": "education"
+    },
+    {
+        "title": "Java Developer",
+        "place": "IT Högskolan",
+        "duration": "2025 - Ongoing",
+        "description": "Specialized in web development and cloud computing, Completed a thesis on scalable web applications",
+        "type": "education"
+    },
+    {
+        "title": "Internship - Frontend Developer",
+        "place": "Tegel Consulting AB",
+        "duration": "2024 - 2025",
+        "description": "Specialized in web development and cloud computing, Completed a thesis on scalable web applications",
+        "type": "work"
+    }
+]

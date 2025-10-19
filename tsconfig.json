@@ -26,6 +26,8 @@
       "@models/*": ["./src/models/*"],
       "@styles/*": ["./src/scss/*"],
       "@assets/*": ["./src/assets/*"],
+      "@projects": ["./src/projects.json"],
+      "@experiance": ["./src/experiance.json"],
     }
   },
   "include": ["src"],

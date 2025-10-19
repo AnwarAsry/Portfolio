@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+    --color-container: #1d1d1d;
+    --color-headingColor: #f2f3f2;
+    --color-borderColor: #303031;
+    --color-navbg: #262729;
+    --color-navtextColor: #817e84;
+    --color-activeRoute: #f2f3f2;
+    --color-activeRoutebg: #3f3e45;
+    --color-labelbg: #000101;
+    --color-labelbgalt: #3f3e45;
+    --color-labelWhite: #f2f3f2;
+    --color-hoverContainerbg: #2d2d2d;
+}
+
 html {
     scroll-behavior: smooth;
 }
-/* body {
-	display: grid;
-	grid-template-rows: 20px [content-start] auto [content-end] 80px;
-	grid-template-columns: minmax(20px, 1fr) [content-start] minmax(0, 710px) [content-end] minmax(20px, 1fr);
-	gap: 20px;
-	place-content: center;
-  	background-color: #e3e9f7;
-} */
+body {
+    background-color: black;
+    color: white;
+}
